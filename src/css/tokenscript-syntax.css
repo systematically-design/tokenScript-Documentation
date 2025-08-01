@@ -1,0 +1,45 @@
+/* Custom DSL Syntax Highlighting */
+.tokenscript-code {
+	background-color: var(--code-bg);
+	border-radius: 6px;
+	padding: 1rem;
+	overflow-x: auto;
+	font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+	font-size: 0.875rem;
+	line-height: 1.6;
+}
+
+.tokenscript-code .keyword {
+	color: #ff79c6; /* Pink for keywords */
+	font-weight: bold;
+}
+
+.tokenscript-code .string {
+	color: #f1fa8c; /* Yellow for strings */
+}
+
+.tokenscript-code .number {
+	color: #bd93f9; /* Purple for numbers */
+}
+
+.tokenscript-code .comment {
+	color: #6272a4; /* Gray for comments */
+	font-style: italic;
+}
+
+.tokenscript-code .function {
+	color: #50fa7b; /* Green for functions */
+}
+
+.tokenscript-code .variable {
+	color: #8be9fd; /* Cyan for variables */
+}
+
+.tokenscript-code .operator {
+	color: #ff5555; /* Red for operators */
+}
+
+.tokenscript-code .token-keyword {
+	color: #ffb86c; /* Orange for TokenScript-specific keywords */
+	font-weight: bold;
+}

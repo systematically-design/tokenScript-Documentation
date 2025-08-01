@@ -72,9 +72,16 @@ function generateId(text) {
 export function smoothScrollToElement(id) {
 	const element = document.getElementById(id);
 	if (element) {
-		element.scrollIntoView({
-			behavior: 'smooth',
-			block: 'start'
+		// Calculate offset to account for fixed header
+		const header = document.querySelector('.header');
+		const headerHeight = header ? header.getBoundingClientRect().height + 20 : 100;
+		
+		const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+		const offsetPosition = elementPosition - headerHeight;
+		
+		window.scrollTo({
+			top: offsetPosition,
+			behavior: 'smooth'
 		});
 	}
 }

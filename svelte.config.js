@@ -9,17 +9,7 @@ const config = {
 	preprocess: [
 		vitePreprocess(),
 		mdsvex({
-			extensions: ['.md'],
-			highlight: {
-				highlighter: async (code, lang = 'text') => {
-					const { codeToHtml } = await import('shiki');
-					const html = await codeToHtml(code, {
-						lang,
-						theme: 'github-dark'
-					});
-					return html;
-				}
-			}
+			extensions: ['.md']
 		})
 	],
 

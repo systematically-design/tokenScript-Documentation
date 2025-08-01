@@ -1,10 +1,50 @@
 <script>
+	import { onMount } from 'svelte';
 	import Sidebar from './Sidebar.svelte';
 	import TableOfContents from './TableOfContents.svelte';
-	
+	import { extractTableOfContents } from '$lib/utils/toc.js';
+
 	export const title = 'DocsSite';
 	export let navigation = [];
-	export let tableOfContents = [];
+	
+	let tableOfContents = [];
+	let contentElement;
+	
+	function extractTOC() {
+		if (contentElement && contentElement.innerHTML.trim()) {
+			tableOfContents = extractTableOfContents(contentElement.innerHTML);
+		}
+	}
+	
+	// Reactive statement to extract TOC when content element is available
+	$: if (contentElement) {
+		setTimeout(() => {
+			extractTOC();
+		}, 100);
+	}
+	
+	onMount(() => {
+		// Extract TOC immediately on mount
+		setTimeout(() => {
+			extractTOC();
+		}, 100);
+		
+		// Set up a mutation observer to watch for content changes
+		const observer = new MutationObserver(() => {
+			setTimeout(() => {
+				extractTOC();
+			}, 50);
+		});
+		
+		if (contentElement) {
+			observer.observe(contentElement, {
+				childList: true,
+				subtree: true
+			});
+		}
+		
+		return () => observer.disconnect();
+	});
 </script>
 
 <div class="layout">
@@ -19,7 +59,7 @@
 			<Sidebar {navigation} />
 		</aside>
 		
-		<main class="content" id="main-content">
+		<main class="content" id="main-content" bind:this={contentElement}>
 			<article class="article">
 				<slot />
 			</article>

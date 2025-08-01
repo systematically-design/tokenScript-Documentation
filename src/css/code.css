@@ -11,7 +11,7 @@ code {
 
 pre {
 	background-color: var(--bg-secondary);
-	padding: 1rem;
+	padding: 1.5rem;
 	border-radius: 6px;
 	overflow-x: auto;
 	margin: 1.5rem 0;

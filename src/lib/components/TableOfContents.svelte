@@ -7,31 +7,44 @@
 	let activeId = '';
 	
 	onMount(() => {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						activeId = entry.target.id;
-					}
-				});
-			},
-			{
-				rootMargin: '-20% 0% -80% 0%'
-			}
-		);
-		
-		const headingElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-		headingElements.forEach((el) => observer.observe(el));
-		
-		return () => observer.disconnect();
+		// Wait for content to be rendered, then observe headings
+		setTimeout(() => {
+			const observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting) {
+							activeId = entry.target.id;
+						}
+					});
+				},
+				{
+					rootMargin: '-20% 0% -80% 0%'
+				}
+			);
+			
+			const headingElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+			headingElements.forEach((el) => {
+				// Ensure heading has an ID for linking
+				if (!el.id) {
+					el.id = generateId(el.textContent || '');
+				}
+				observer.observe(el);
+			});
+			
+			return () => observer.disconnect();
+		}, 100);
 	});
+	
+	function generateId(text) {
+		return text
+			.toLowerCase()
+			.replace(/[^\w\s-]/g, '')
+			.replace(/\s+/g, '-')
+			.trim();
+	}
 	
 	function handleClick(id) {
 		smoothScrollToElement(id);
-	}
-	
-	function renderTocItems(items, level = 0) {
-		return items;
 	}
 </script>
 

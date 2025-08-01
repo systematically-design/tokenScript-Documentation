@@ -5,10 +5,18 @@ import { error } from '@sveltejs/kit';
 import { marked } from 'marked';
 import type { PageServerLoad } from './$types';
 
-// Configure marked options
+// Configure marked with simple code highlighting - NO SHIKI
+const renderer = new marked.Renderer();
+renderer.code = function({ text, lang }: { text: string; lang?: string }) {
+	// Just return basic code blocks for everything - no fancy highlighting
+	return `<pre><code class="language-${lang || 'text'}">${text}</code></pre>`;
+};
+
 marked.setOptions({
 	gfm: true,
-	breaks: false
+	breaks: false,
+	async: true,
+	renderer: renderer
 });
 
 export const load: PageServerLoad = async ({ params }) => {
@@ -25,8 +33,8 @@ export const load: PageServerLoad = async ({ params }) => {
 		const content = fs.readFileSync(filePath, 'utf-8');
 		const { data, content: markdownContent } = matter(content);
 		
-		// Convert markdown to HTML using marked
-		const htmlContent = marked(markdownContent);
+		// Convert markdown to HTML using marked (await the Promise!)
+		const htmlContent = await marked(markdownContent);
 		
 		return {
 			title: data.title || 'DocsSite',
