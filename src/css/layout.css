@@ -1,0 +1,13 @@
+/* Layout and Base Styles */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--bg-primary);
+	color: var(--text-color);
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+* {
+	box-sizing: border-box;
+}
