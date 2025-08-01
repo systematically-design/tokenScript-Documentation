@@ -1,5 +1,8 @@
 /* App Global Styles - Main Entry Point */
 
+/* Import CSS reset first */
+@import './reset.css';
+
 /* Import organized style modules */
 @import './colors.css';
 @import './layout.css';

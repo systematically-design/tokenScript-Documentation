@@ -5,6 +5,12 @@ import { error } from '@sveltejs/kit';
 import { marked } from 'marked';
 import type { PageServerLoad } from './$types';
 
+// Configure marked options
+marked.setOptions({
+	gfm: true,
+	breaks: false
+});
+
 export const load: PageServerLoad = async ({ params }) => {
 	const slug = params.slug || '';
 	let filePath: string;

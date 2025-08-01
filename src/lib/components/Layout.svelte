@@ -1,7 +1,6 @@
 <script>
 	import Sidebar from './Sidebar.svelte';
 	import TableOfContents from './TableOfContents.svelte';
-	import ThemeToggle from './ThemeToggle.svelte';
 	
 	export const title = 'DocsSite';
 	export let navigation = [];
@@ -12,7 +11,6 @@
 	<header class="header">
 		<div class="header-content">
 			<a href="/" class="site-title">DocsSitez</a>
-			<ThemeToggle />
 		</div>
 	</header>
 	

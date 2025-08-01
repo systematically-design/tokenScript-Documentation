@@ -54,6 +54,21 @@
 </nav>
 
 <style>
+	/* Navigation Section Headers */
+	.nav-section-header {
+		display: block;
+		padding: 0.75rem 0.75rem 0.5rem 0.75rem;
+		font-weight: 600;
+		font-size: 0.875rem;
+		color: var(--text-color);
+		text-transform: uppercase;
+		letter-spacing: 0.025em;
+		/* border-bottom: 1px solid var(--border-color); */
+		margin-bottom: 0.5rem;
+		cursor: default;
+	}
+
+
 	.sidebar {
 		width: 100%;
 		height: 100%;
@@ -105,7 +120,7 @@
 	.nav-child {
 		font-size: 0.8125rem;
 		padding-left: 1rem;
-		border-left: 2px solid var(--border-color);
+		/* border-left: 2px solid var(--border-color); */
 	}
 	
 	.nav-child.active {
