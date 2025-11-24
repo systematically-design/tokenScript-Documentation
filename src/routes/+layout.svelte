@@ -2,11 +2,12 @@
 	import Layout from '$lib/components/Layout.svelte';
 	import { onMount } from 'svelte';
 	import { generateNavigation } from '$lib/utils/navigation.js';
+	import type { NavigationItem } from '$lib/types';
 	import '../css/app.css';
 	
 	let { children } = $props();
 	
-	let navigation = $state<any[]>([]);
+	let navigation = $state<NavigationItem[]>([]);
 	
 	onMount(() => {
 		try {

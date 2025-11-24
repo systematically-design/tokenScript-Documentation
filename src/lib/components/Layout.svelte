@@ -1,18 +1,62 @@
-<script>
+<script lang="ts">
+	import { onMount } from 'svelte';
 	import Sidebar from './Sidebar.svelte';
 	import TableOfContents from './TableOfContents.svelte';
-	import ThemeToggle from './ThemeToggle.svelte';
-	
+	import { extractTableOfContents } from '$lib/utils/toc.js';
+	import type { NavigationItem, TOCHeading } from '$lib/types';
+
 	export const title = 'DocsSite';
-	export let navigation = [];
-	export let tableOfContents = [];
+	export let navigation: NavigationItem[] = [];
+	
+	let tableOfContents: TOCHeading[] = [];
+	let contentElement: HTMLElement;
+	
+	function extractTOC() {
+		if (contentElement && contentElement.innerHTML.trim()) {
+			// Wait a bit longer for mdsvex to process headings and add IDs
+			setTimeout(() => {
+				tableOfContents = extractTableOfContents(contentElement.innerHTML);
+				console.log('Extracted TOC:', tableOfContents);
+				console.log('Content innerHTML:', contentElement.innerHTML.substring(0, 500));
+			}, 200);
+		}
+	}
+	
+	// Reactive statement to extract TOC when content element is available
+	$: if (contentElement) {
+		setTimeout(() => {
+			extractTOC();
+		}, 100);
+	}
+	
+	onMount(() => {
+		// Extract TOC immediately on mount
+		setTimeout(() => {
+			extractTOC();
+		}, 100);
+		
+		// Set up a mutation observer to watch for content changes
+		const observer = new MutationObserver(() => {
+			setTimeout(() => {
+				extractTOC();
+			}, 50);
+		});
+		
+		if (contentElement) {
+			observer.observe(contentElement, {
+				childList: true,
+				subtree: true
+			});
+		}
+		
+		return () => observer.disconnect();
+	});
 </script>
 
 <div class="layout">
 	<header class="header">
 		<div class="header-content">
 			<a href="/" class="site-title">DocsSitez</a>
-			<ThemeToggle />
 		</div>
 	</header>
 	
@@ -21,7 +65,7 @@
 			<Sidebar {navigation} />
 		</aside>
 		
-		<main class="content" id="main-content">
+		<main class="content" id="main-content" bind:this={contentElement}>
 			<article class="article">
 				<slot />
 			</article>

@@ -1,37 +1,56 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import { smoothScrollToElement } from '$lib/utils/toc.js';
+	import type { TOCHeading } from '$lib/types';
 	
-	export let headings = [];
+	export let headings: TOCHeading[] = [];
 	
 	let activeId = '';
+	let generatedHeadings: TOCHeading[] = [];
+	
+	// Use generated headings if provided headings are empty
+	$: displayHeadings = headings.length > 0 ? headings : generatedHeadings;
 	
 	onMount(() => {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						activeId = entry.target.id;
-					}
-				});
-			},
-			{
-				rootMargin: '-20% 0% -80% 0%'
-			}
-		);
-		
-		const headingElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-		headingElements.forEach((el) => observer.observe(el));
-		
-		return () => observer.disconnect();
+		// Wait for content to be rendered, then observe headings
+		setTimeout(() => {
+			const observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting) {
+							activeId = entry.target.id;
+						}
+					});
+				},
+				{
+					rootMargin: '-20% 0% -80% 0%'
+				}
+			);
+			
+			const headingElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+			headingElements.forEach((el) => {
+				// Ensure heading has an ID for linking
+				if (!el.id) {
+					el.id = generateId(el.textContent || '');
+				}
+				observer.observe(el);
+			});
+			
+			return () => observer.disconnect();
+		}, 100);
 	});
 	
-	function handleClick(id) {
-		smoothScrollToElement(id);
+	function generateId(text: string): string {
+		return text
+			.toLowerCase()
+			.replace(/[^\w\s-]/g, '')
+			.replace(/\s+/g, '-')
+			.trim();
 	}
 	
-	function renderTocItems(items, level = 0) {
-		return items;
+	function handleClick(id: string): void {
+		console.log('TOC click:', id);
+		smoothScrollToElement(id);
 	}
 </script>
 

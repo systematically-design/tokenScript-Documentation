@@ -11,7 +11,7 @@ code {
 
 pre {
 	background-color: var(--bg-secondary);
-	padding: 1rem;
+	padding: 1.5rem;
 	border-radius: 6px;
 	overflow-x: auto;
 	margin: 1.5rem 0;
@@ -23,4 +23,10 @@ pre code {
 	padding: 0;
 	border-radius: 0;
 	font-size: 0.875rem;
+}
+
+/* Shiki dual theme support - Override backgrounds to use design system */
+.shiki,
+.shiki[data-theme] {
+	background-color: #181818 !important;
 }
