@@ -24,3 +24,9 @@ pre code {
 	border-radius: 0;
 	font-size: 0.875rem;
 }
+
+/* Shiki dual theme support - Override backgrounds to use design system */
+.shiki,
+.shiki[data-theme] {
+	background-color: #181818 !important;
+}

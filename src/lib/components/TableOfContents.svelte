@@ -1,10 +1,15 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import { smoothScrollToElement } from '$lib/utils/toc.js';
+	import type { TOCHeading } from '$lib/types';
 	
-	export let headings = [];
+	export let headings: TOCHeading[] = [];
 	
 	let activeId = '';
+	let generatedHeadings: TOCHeading[] = [];
+	
+	// Use generated headings if provided headings are empty
+	$: displayHeadings = headings.length > 0 ? headings : generatedHeadings;
 	
 	onMount(() => {
 		// Wait for content to be rendered, then observe headings
@@ -35,7 +40,7 @@
 		}, 100);
 	});
 	
-	function generateId(text) {
+	function generateId(text: string): string {
 		return text
 			.toLowerCase()
 			.replace(/[^\w\s-]/g, '')
@@ -43,7 +48,8 @@
 			.trim();
 	}
 	
-	function handleClick(id) {
+	function handleClick(id: string): void {
+		console.log('TOC click:', id);
 		smoothScrollToElement(id);
 	}
 </script>

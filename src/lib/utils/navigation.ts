@@ -1,4 +1,6 @@
-export function generateNavigation() {
+import type { NavigationItem } from '$lib/types';
+
+export function generateNavigation(): NavigationItem[] {
 	// Navigation based on our docs structure
 	return [
 		{
@@ -84,6 +86,12 @@ export function generateNavigation() {
 					title: 'Quick Syntax Reference',
 					path: 'dsl-user-guide/DSL_QUICK_REFERENCE',
 					order: 1
+				}
+				,
+				{
+					title: 'Authoring TokenScript DSL with LLMs',
+					path: 'dsl-user-guide/LLM_AUTHORING_GUIDE',
+					order: 2
 				}
 			]
 		}

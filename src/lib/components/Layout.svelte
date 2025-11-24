@@ -1,18 +1,24 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import Sidebar from './Sidebar.svelte';
 	import TableOfContents from './TableOfContents.svelte';
 	import { extractTableOfContents } from '$lib/utils/toc.js';
+	import type { NavigationItem, TOCHeading } from '$lib/types';
 
 	export const title = 'DocsSite';
-	export let navigation = [];
+	export let navigation: NavigationItem[] = [];
 	
-	let tableOfContents = [];
-	let contentElement;
+	let tableOfContents: TOCHeading[] = [];
+	let contentElement: HTMLElement;
 	
 	function extractTOC() {
 		if (contentElement && contentElement.innerHTML.trim()) {
-			tableOfContents = extractTableOfContents(contentElement.innerHTML);
+			// Wait a bit longer for mdsvex to process headings and add IDs
+			setTimeout(() => {
+				tableOfContents = extractTableOfContents(contentElement.innerHTML);
+				console.log('Extracted TOC:', tableOfContents);
+				console.log('Content innerHTML:', contentElement.innerHTML.substring(0, 500));
+			}, 200);
 		}
 	}
 	
