@@ -1,0 +1,290 @@
+# 5.2 Frequently Asked Questions
+
+Common questions about TokenScript DSL.
+
+## 5.2.1 General
+
+### What is TokenScript DSL?
+
+TokenScript DSL is a simple, human-readable language for defining design tokens. It lets you create consistent design systems with scales, references, and automatic value generation.
+
+### Who should use TokenScript DSL?
+
+- Designers creating design systems
+- Design engineers implementing tokens
+- Developers integrating design tokens
+- Teams maintaining design systems
+
+### What formats can I export to?
+
+- W3C Design Tokens format
+- Tokens Studio format
+- Simple flat format
+- Raw IR format
+
+## 5.2.2 Syntax
+
+### Do I need quotes for strings?
+
+Only if the string contains spaces or special characters:
+
+```tokenscript
+// No quotes needed
+fontFamily = Inter
+
+// Quotes needed for spaces
+fontFamily = "Inter, sans-serif"
+```
+
+### Can I use tabs or spaces for indentation?
+
+Either works, but be consistent. Don't mix tabs and spaces in the same file.
+
+### How do I add comments?
+
+Use `//` for comments:
+
+```tokenscript
+// This is a comment
+spacing = 8  // Inline comment
+```
+
+### Can I use expressions?
+
+Yes! Basic math operations are supported:
+
+```tokenscript
+base = 8
+double = $base * 2
+half = $base / 2
+sum = $base + 4
+```
+
+## 5.2.3 Scales
+
+### What's the difference between linear and modular scales?
+
+- **Linear scales** add a fixed amount each step (great for spacing)
+- **Modular scales** multiply by a ratio each step (great for typography)
+
+### Can I use both increment and peak?
+
+No, use one or the other. The system will calculate the missing value.
+
+### How do I round scale values?
+
+Use the `/roundTo()` pipeline:
+
+```tokenscript
+spacing
+  /numberScale : linear
+    base = 7
+    increment = 3
+    steps = ["xs", "sm", "md"]
+  /roundTo(4)
+```
+
+### Can I create custom step names?
+
+Yes! Use an array of strings:
+
+```tokenscript
+steps = ["tiny", "small", "medium", "large", "huge"]
+```
+
+## 5.2.4 References
+
+### How do I reference nested tokens?
+
+Use dots to access nested tokens:
+
+```tokenscript
+colors
+  primary = #3B82F6
+
+button
+  color = $colors.primary
+```
+
+### What's the difference between `$token` and `$...token`?
+
+- `$token` - Absolute reference from root
+- `$...token` - Self reference within current scope
+
+### Can I reference tokens before they're defined?
+
+No, tokens must be defined before they're referenced.
+
+## 5.2.5 Colors
+
+### What color formats are supported?
+
+- Hex: `#ff0000`, `#f00`, `#ff0000ff`
+- RGB: `rgb(255, 0, 0)`
+- RGBA: `rgba(255, 0, 0, 0.5)`
+- HSL: `hsl(0, 100%, 50%)`
+- HSLA: `hsla(0, 100%, 50%, 0.5)`
+- OKLCH: `oklch(0.65, 0.2, 250)`
+- Named: `blue`, `red`, etc.
+
+### Can I create color scales?
+
+Color scales work with numeric values. For actual color variations, define them manually or use color harmony generators.
+
+## 5.2.6 Typography
+
+### What's a good typography ratio?
+
+Common ratios:
+- **1.2** (Minor Third) - Subtle
+- **1.25** (Major Third) - Balanced, most common
+- **1.333** (Perfect Fourth) - More dramatic
+- **1.618** (Golden Ratio) - Classic, harmonious
+
+### Should I round typography values?
+
+Yes, rounding makes values cleaner:
+
+```tokenscript
+typography
+  /numberScale : modular
+    base = 16
+    ratio = 1.25
+    steps = ["sm", "md", "lg"]
+  /roundTo(1)
+```
+
+## 5.2.7 Composite Tokens
+
+### What are composite tokens?
+
+Composite tokens group related properties together (typography, borders, shadows, transitions).
+
+### What properties are required for typography?
+
+- `fontSize`
+- `lineHeight`
+- `fontWeight`
+- `fontFamily`
+- `letterSpacing`
+
+### Can I use references in composite tokens?
+
+Yes! Reference other tokens in composite properties:
+
+```tokenscript
+baseFontSize = 16
+
+heading:typography
+  fontSize = $baseFontSize * 1.5
+  lineHeight = 1.5
+  fontWeight = 700
+  fontFamily = "Inter"
+```
+
+## 5.2.8 Best Practices
+
+### Should I use scales or define values manually?
+
+Use scales when you have multiple related values. Define manually for one-off values.
+
+### How do I organize my tokens?
+
+Group related tokens together:
+
+```tokenscript
+colors
+  primary = ...
+  secondary = ...
+
+spacing
+  xs = ...
+  sm = ...
+```
+
+### Should I use semantic or literal names?
+
+Use semantic names that describe purpose:
+
+```tokenscript
+// ✅ Good - semantic
+colors
+  primary = #3B82F6
+  textPrimary = #111827
+
+// ❌ Bad - literal
+colors
+  blue = #3B82F6
+  black = #111827
+```
+
+## 5.2.9 Integration
+
+### How do I use tokens in my code?
+
+Export tokens using the API, then import them into your application:
+
+```javascript
+// After exporting to JSON
+import tokens from './tokens.json';
+
+const buttonPadding = tokens.spacing.md;
+```
+
+### Can I use tokens in CSS?
+
+Yes! Export tokens and use CSS custom properties:
+
+```css
+:root {
+  --spacing-md: 16px;
+  --color-primary: #3B82F6;
+}
+```
+
+### How do I handle themes?
+
+Define separate color sets for each theme:
+
+```tokenscript
+colors
+  light
+    background = #FFFFFF
+    text = #111827
+  dark
+    background = #111827
+    text = #F9FAFB
+```
+
+## 5.2.10 Troubleshooting
+
+### My tokens aren't generating
+
+Check:
+- Scale syntax is correct
+- All required parameters are provided
+- Steps are defined
+- No syntax errors
+
+### References aren't working
+
+Check:
+- Token is defined before reference
+- Reference path is correct
+- No circular dependencies
+- Token name spelling
+
+### Getting parse errors
+
+Check:
+- Correct indentation
+- Valid syntax
+- No missing `=` signs
+- Proper quotes for strings
+
+## 5.2.11 Next Steps
+
+- Check [Getting Started](./1-getting-started.md) for basics
+- Review [Syntax Reference](./2.1-syntax-reference.md) for details
+- See [Troubleshooting](./5.1-troubleshooting.md) for help
+
