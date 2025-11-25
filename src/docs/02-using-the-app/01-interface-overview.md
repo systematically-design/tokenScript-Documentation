@@ -116,9 +116,9 @@ The editor uses sensible defaults:
 
 Now that you understand the interface:
 
-1. **Pages & Workspace** - Learn to organize your tokens
-2. **Editor Features** - Master the editor's powerful features
-3. **Creating Tokens** - Start creating tokens
+1. **[Pages & Workspace](02-pages-and-workspace.md)** - Learn to organize your tokens
+2. **[Editor Features](03-editor-features.md)** - Master the editor's powerful features
+3. **[Creating Tokens](../03-creating-tokens/README.md)** - Start creating tokens
 
 ---
 

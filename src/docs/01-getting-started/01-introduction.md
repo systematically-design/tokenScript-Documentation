@@ -66,14 +66,14 @@ buttonPadding = $baseSpacing * 1.5  // 12px
 ### Visualizations
 See your scales come to life with interactive visualizations that help you understand relationships and make decisions.
 
-## Getting Started
+## Next Steps
 
-To get started with Systematically:
+Ready to start using Systematically?
 
-1. **Quick Start** - Write your first TokenScript DSL code and see it compile
-2. **Using Systematically** - Learn the interface and features
-3. **Creating Tokens** - Learn to create different types of tokens
-4. **Language Reference** - Complete TokenScript DSL syntax guide
+- **Quick Start** - Write your first TokenScript DSL code and see it compile
+- **Using Systematically** - Learn the interface and features
+- **Creating Tokens** - Learn to create different types of tokens
+- **Language Reference** - Complete TokenScript DSL syntax guide
 
 ## Example: Your First Design System
 
@@ -112,13 +112,7 @@ This creates:
 - A typography scale from 16px to 31.25px
 - A color palette with primary, secondary, and neutral colors
 
-## Next Steps
-
-- **Get started**: Quick Start - Write your first TokenScript DSL code
-- **Learn the interface**: Using Systematically
-- **Explore features**: Creating Tokens
-
 ---
 
-Ready to dive in? Use the navigation to get started!
+Ready to start writing code? Use the navigation to go to Quick Start!
 

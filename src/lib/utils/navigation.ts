@@ -4,7 +4,7 @@ export function generateNavigation(): NavigationItem[] {
 	// Navigation based on our docs structure
 	return [
 		{
-			title: 'Systematically Documentation',
+			title: 'Welcome',
 			path: '',
 			order: 1
 		},
@@ -58,90 +58,48 @@ export function generateNavigation(): NavigationItem[] {
 			]
 		},
 		{
-			title: 'Creating Tokens',
-			path: '03-creating-tokens',
+			title: 'TokenScript DSL',
+			path: '03-tokenscript-dsl',
 			order: 4,
 			children: [
 				{
-					title: 'Simple Tokens',
-					path: '03-creating-tokens/01-simple-tokens',
-					order: 1
-				},
-				{
-					title: 'Number Scales',
-					path: '03-creating-tokens/02-number-scales',
-					order: 2
-				},
-				{
-					title: 'Color Scales',
-					path: '03-creating-tokens/03-color-scales',
-					order: 3
-				},
-				{
-					title: 'Color Harmonies',
-					path: '03-creating-tokens/04-color-harmonies',
-					order: 4
-				},
-				{
-					title: 'Typography Scales',
-					path: '03-creating-tokens/05-typography-scales',
-					order: 5
-				},
-				{
-					title: 'Spacing Systems',
-					path: '03-creating-tokens/06-spacing-systems',
-					order: 6
-				},
-				{
-					title: 'Advanced Tokens',
-					path: '03-creating-tokens/07-advanced-tokens',
-					order: 7
-				}
-			]
-		},
-		{
-			title: 'Language Reference',
-			path: '04-language-reference',
-			order: 5,
-			children: [
-				{
-					title: 'Syntax Reference',
-					path: '04-language-reference/01-syntax-reference',
+					title: 'Syntax Basics',
+					path: '03-tokenscript-dsl/01-syntax-basics',
 					order: 1
 				},
 				{
 					title: 'Scales',
-					path: '04-language-reference/02-scales',
+					path: '03-tokenscript-dsl/02-scales',
 					order: 2
 				},
 				{
 					title: 'Colors',
-					path: '04-language-reference/03-colors',
+					path: '03-tokenscript-dsl/03-colors',
 					order: 3
 				},
 				{
 					title: 'Typography',
-					path: '04-language-reference/04-typography',
+					path: '03-tokenscript-dsl/04-typography',
 					order: 4
 				},
 				{
 					title: 'Spacing',
-					path: '04-language-reference/05-spacing',
+					path: '03-tokenscript-dsl/05-spacing',
 					order: 5
 				},
 				{
 					title: 'Composite Tokens',
-					path: '04-language-reference/06-composite-tokens',
+					path: '03-tokenscript-dsl/06-composite-tokens',
 					order: 6
 				},
 				{
 					title: 'References',
-					path: '04-language-reference/07-references',
+					path: '03-tokenscript-dsl/07-references',
 					order: 7
 				},
 				{
 					title: 'Expressions',
-					path: '04-language-reference/08-expressions',
+					path: '03-tokenscript-dsl/08-expressions',
 					order: 8
 				}
 			]

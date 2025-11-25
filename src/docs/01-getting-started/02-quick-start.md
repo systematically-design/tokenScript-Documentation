@@ -219,23 +219,6 @@ baseSpacing = 16px
 largeSpacing = 32px
 ```
 
-## Key Concepts
-
-### Assignments
-The simplest form: `name = value`
-
-### References
-Use `$tokenName` to reference other tokens
-
-### Scales
-Use `/numberScale : linear` or `/numberScale : modular` to generate sequences
-
-### Indentation
-Use indentation (spaces or tabs) to create nested groups
-
-### Comments
-Use `//` for comments
-
 ## What's Next
 
 Congratulations! You've written your first TokenScript DSL code and seen it compile into tokens. Here's what to explore next:
