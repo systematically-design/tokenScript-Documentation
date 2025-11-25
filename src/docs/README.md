@@ -17,72 +17,72 @@ Choose the path that fits your needs:
 
 Start with the visual editor and learn the DSL as you go:
 
-1. **[Introduction](01-01-getting-started/01-introduction.md)** - What is Systematically?
-2. **[Quick Start: App](01-01-getting-started/02-quick-start-app.md)** - Get started with the visual editor
-3. **[Using the App](02-02-using-the-app/01-interface-overview.md)** - Master the interface
-4. **[Creating Tokens](03-03-creating-tokens/README.md)** - Learn to create tokens visually
-5. **[Language Reference](04-04-language-reference/README.md)** - Deep dive into DSL syntax (when ready)
+1. **[Introduction](01-getting-started/01-introduction.md)** - What is Systematically?
+2. **[Quick Start: App](01-getting-started/02-quick-start-app.md)** - Get started with the visual editor
+3. **[Using the App](02-using-the-app/01-interface-overview.md)** - Master the interface
+4. **[Creating Tokens](03-creating-tokens/README.md)** - Learn to create tokens visually
+5. **[Language Reference](04-language-reference/README.md)** - Deep dive into DSL syntax (when ready)
 
 ### 💻 For Developers (DSL-First Path)
 
 Start with the language and use the app as needed:
 
-1. **[Introduction](01-01-getting-started/01-introduction.md)** - What is Systematically?
-2. **[Quick Start: DSL](01-01-getting-started/03-quick-start-dsl.md)** - Write your first tokens
-3. **[Language Reference](04-04-language-reference/README.md)** - Complete syntax reference
-4. **[Creating Tokens](03-03-creating-tokens/README.md)** - Token creation patterns
-5. **[Integration](05-05-integration/01-api-reference.md)** - API and export formats
+1. **[Introduction](01-getting-started/01-introduction.md)** - What is Systematically?
+2. **[Quick Start: DSL](01-getting-started/03-quick-start-dsl.md)** - Write your first tokens
+3. **[Language Reference](04-language-reference/README.md)** - Complete syntax reference
+4. **[Creating Tokens](03-creating-tokens/README.md)** - Token creation patterns
+5. **[Integration](05-integration/01-api-reference.md)** - API and export formats
 
 ### 🚀 Quick Start (Either Path)
 
-- **New to design tokens?** → Start with [App Quick Start](01-01-getting-started/02-quick-start-app.md)
-- **Familiar with design tokens?** → Start with [DSL Quick Start](01-01-getting-started/03-quick-start-dsl.md)
-- **Need API docs?** → Jump to [API Reference](05-05-integration/01-api-reference.md)
+- **New to design tokens?** → Start with [App Quick Start](01-getting-started/02-quick-start-app.md)
+- **Familiar with design tokens?** → Start with [DSL Quick Start](01-getting-started/03-quick-start-dsl.md)
+- **Need API docs?** → Jump to [API Reference](05-integration/01-api-reference.md)
 
 ## Documentation Structure
 
 ### 01. Getting Started
-- [Introduction](01-01-getting-started/01-introduction.md) - Overview of Systematically
-- [Quick Start: App](01-01-getting-started/02-quick-start-app.md) - Visual editor introduction
-- [Quick Start: DSL](01-01-getting-started/03-quick-start-dsl.md) - Language introduction
+- [Introduction](01-getting-started/01-introduction.md) - Overview of Systematically
+- [Quick Start: App](01-getting-started/02-quick-start-app.md) - Visual editor introduction
+- [Quick Start: DSL](01-getting-started/03-quick-start-dsl.md) - Language introduction
 
 ### 02. Using the App
-- [Interface Overview](02-02-using-the-app/01-interface-overview.md) - Understanding the UI
-- [Pages & Workspace](02-02-using-the-app/02-pages-and-workspace.md) - Organizing your tokens
-- [Editor Features](02-02-using-the-app/03-editor-features.md) - Autocomplete, syntax highlighting, shortcuts
-- [Visualizations](02-02-using-the-app/04-visualizations.md) - Interactive token visualizations
-- [Cloud Sync](02-02-using-the-app/05-cloud-sync.md) - Saving and syncing your work
+- [Interface Overview](02-using-the-app/01-interface-overview.md) - Understanding the UI
+- [Pages & Workspace](02-using-the-app/02-pages-and-workspace.md) - Organizing your tokens
+- [Editor Features](02-using-the-app/03-editor-features.md) - Autocomplete, syntax highlighting, shortcuts
+- [Visualizations](02-using-the-app/04-visualizations.md) - Interactive token visualizations
+- [Cloud Sync](02-using-the-app/05-cloud-sync.md) - Saving and syncing your work
 
 ### 03. Creating Tokens
-- [Simple Tokens](03-03-creating-tokens/01-simple-tokens.md) - Basic colors, spacing, typography
-- [Number Scales](03-03-creating-tokens/02-number-scales.md) - Linear and modular scales
-- [Color Scales](03-03-creating-tokens/03-color-scales.md) - Color palettes and ramps
-- [Color Harmonies](03-03-creating-tokens/04-color-harmonies.md) - Harmonious color relationships
-- [Typography Scales](03-03-creating-tokens/05-typography-scales.md) - Typography systems
-- [Spacing Systems](03-03-creating-tokens/06-spacing-systems.md) - Spacing scales and layouts
-- [Advanced Tokens](03-03-creating-tokens/07-advanced-tokens.md) - Matrices, streams, forEach
+- [Simple Tokens](03-creating-tokens/01-simple-tokens.md) - Basic colors, spacing, typography
+- [Number Scales](03-creating-tokens/02-number-scales.md) - Linear and modular scales
+- [Color Scales](03-creating-tokens/03-color-scales.md) - Color palettes and ramps
+- [Color Harmonies](03-creating-tokens/04-color-harmonies.md) - Harmonious color relationships
+- [Typography Scales](03-creating-tokens/05-typography-scales.md) - Typography systems
+- [Spacing Systems](03-creating-tokens/06-spacing-systems.md) - Spacing scales and layouts
+- [Advanced Tokens](03-creating-tokens/07-advanced-tokens.md) - Matrices, streams, forEach
 
 ### 04. Language Reference
-- [Syntax Reference](04-04-language-reference/01-syntax-reference.md) - Complete DSL syntax
-- [Scales](04-04-language-reference/02-scales.md) - Deep dive on scales
-- [Colors](04-04-language-reference/03-colors.md) - Color formats and systems
-- [Typography](04-04-language-reference/04-typography.md) - Typography tokens
-- [Spacing](04-04-language-reference/05-spacing.md) - Spacing tokens
-- [Composite Tokens](04-04-language-reference/06-composite-tokens.md) - Grouped properties
-- [References](04-04-language-reference/07-references.md) - Advanced referencing
-- [Expressions](04-04-language-reference/08-expressions.md) - Mathematical expressions
+- [Syntax Reference](04-language-reference/01-syntax-reference.md) - Complete DSL syntax
+- [Scales](04-language-reference/02-scales.md) - Deep dive on scales
+- [Colors](04-language-reference/03-colors.md) - Color formats and systems
+- [Typography](04-language-reference/04-typography.md) - Typography tokens
+- [Spacing](04-language-reference/05-spacing.md) - Spacing tokens
+- [Composite Tokens](04-language-reference/06-composite-tokens.md) - Grouped properties
+- [References](04-language-reference/07-references.md) - Advanced referencing
+- [Expressions](04-language-reference/08-expressions.md) - Mathematical expressions
 
 ### 05. Integration
-- [API Reference](05-05-integration/01-api-reference.md) - REST API endpoints
-- [Export Formats](05-05-integration/02-export-formats.md) - W3C, Tokens Studio, and more
-- [Workflows](05-05-integration/03-workflows.md) - Real-world examples and patterns
+- [API Reference](05-integration/01-api-reference.md) - REST API endpoints
+- [Export Formats](05-integration/02-export-formats.md) - W3C, Tokens Studio, and more
+- [Workflows](05-integration/03-workflows.md) - Real-world examples and patterns
 
 ### 06. Best Practices
-- [Best Practices](06-06-best-practices/01-best-practices.md) - Guidelines for maintainable token systems
+- [Best Practices](06-best-practices/01-best-practices.md) - Guidelines for maintainable token systems
 
 ### 07. Help
-- [Troubleshooting](07-07-help/01-troubleshooting.md) - Common issues and solutions
-- [FAQ](07-07-help/02-faq.md) - Frequently asked questions
+- [Troubleshooting](07-help/01-troubleshooting.md) - Common issues and solutions
+- [FAQ](07-help/02-faq.md) - Frequently asked questions
 
 ## Key Concepts
 
@@ -113,5 +113,5 @@ This documentation is maintained at the root level of the Systematically workspa
 
 ---
 
-**Ready to start?** Choose your path above or jump to [Introduction](01-01-getting-started/01-introduction.md)!
+**Ready to start?** Choose your path above or jump to [Introduction](01-getting-started/01-introduction.md)!
 

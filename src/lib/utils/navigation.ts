@@ -4,93 +4,200 @@ export function generateNavigation(): NavigationItem[] {
 	// Navigation based on our docs structure
 	return [
 		{
-			title: 'Welcome to DocsSite',
+			title: 'TokenScript Documentation',
 			path: '',
 			order: 1
 		},
 		{
 			title: 'Getting Started',
-			path: 'getting-started',
+			path: '01-getting-started',
 			order: 2,
 			children: [
 				{
-					title: 'Introduction to TokenScript DSL',
-					path: 'getting-started/01-introduction',
+					title: 'Introduction',
+					path: '01-getting-started/01-introduction',
 					order: 1
 				},
 				{
-					title: 'Quick Start Guide',
-					path: 'getting-started/02-quick-start',
+					title: 'Quick Start: App',
+					path: '01-getting-started/02-quick-start-app',
 					order: 2
 				},
 				{
-					title: 'Installation',
-					path: 'getting-started/installation',
+					title: 'Quick Start: DSL',
+					path: '01-getting-started/03-quick-start-dsl',
 					order: 3
 				}
 			]
 		},
 		{
-			title: 'Guides',
-			path: 'guides',
+			title: 'Using the App',
+			path: '02-using-the-app',
 			order: 3,
 			children: [
 				{
-					title: 'Basic Syntax',
-					path: 'guides/03-basic-syntax',
+					title: 'Interface Overview',
+					path: '02-using-the-app/01-interface-overview',
+					order: 1
+				},
+				{
+					title: 'Pages & Workspace',
+					path: '02-using-the-app/02-pages-and-workspace',
+					order: 2
+				},
+				{
+					title: 'Editor Features',
+					path: '02-using-the-app/03-editor-features',
 					order: 3
 				},
 				{
-					title: 'Variables & Values',
-					path: 'guides/04-variables-values',
+					title: 'Visualizations',
+					path: '02-using-the-app/04-visualizations',
 					order: 4
 				},
 				{
-					title: 'Mathematical Expressions',
-					path: 'guides/05-mathematical-expressions',
+					title: 'Cloud Sync',
+					path: '02-using-the-app/05-cloud-sync',
 					order: 5
-				},
-				{
-					title: 'References',
-					path: 'guides/06-references',
-					order: 6
-				},
-				{
-					title: 'Introduction to Scales',
-					path: 'guides/07-scales-intro',
-					order: 7
-				},
-				{
-					title: 'Self-References',
-					path: 'guides/13-self-references',
-					order: 13
-				},
-				{
-					title: 'Design Systems',
-					path: 'guides/15-design-systems',
-					order: 15
-				},
-				{
-					title: 'Configuration',
-					path: 'guides/configuration',
-					order: 16
 				}
 			]
 		},
 		{
-			title: 'DSL User Guide',
-			path: 'dsl-user-guide',
+			title: 'Creating Tokens',
+			path: '03-creating-tokens',
 			order: 4,
 			children: [
 				{
-					title: 'Quick Syntax Reference',
-					path: 'dsl-user-guide/DSL_QUICK_REFERENCE',
+					title: 'Simple Tokens',
+					path: '03-creating-tokens/01-simple-tokens',
+					order: 1
+				},
+				{
+					title: 'Number Scales',
+					path: '03-creating-tokens/02-number-scales',
+					order: 2
+				},
+				{
+					title: 'Color Scales',
+					path: '03-creating-tokens/03-color-scales',
+					order: 3
+				},
+				{
+					title: 'Color Harmonies',
+					path: '03-creating-tokens/04-color-harmonies',
+					order: 4
+				},
+				{
+					title: 'Typography Scales',
+					path: '03-creating-tokens/05-typography-scales',
+					order: 5
+				},
+				{
+					title: 'Spacing Systems',
+					path: '03-creating-tokens/06-spacing-systems',
+					order: 6
+				},
+				{
+					title: 'Advanced Tokens',
+					path: '03-creating-tokens/07-advanced-tokens',
+					order: 7
+				}
+			]
+		},
+		{
+			title: 'Language Reference',
+			path: '04-language-reference',
+			order: 5,
+			children: [
+				{
+					title: 'Syntax Reference',
+					path: '04-language-reference/01-syntax-reference',
+					order: 1
+				},
+				{
+					title: 'Scales',
+					path: '04-language-reference/02-scales',
+					order: 2
+				},
+				{
+					title: 'Colors',
+					path: '04-language-reference/03-colors',
+					order: 3
+				},
+				{
+					title: 'Typography',
+					path: '04-language-reference/04-typography',
+					order: 4
+				},
+				{
+					title: 'Spacing',
+					path: '04-language-reference/05-spacing',
+					order: 5
+				},
+				{
+					title: 'Composite Tokens',
+					path: '04-language-reference/06-composite-tokens',
+					order: 6
+				},
+				{
+					title: 'References',
+					path: '04-language-reference/07-references',
+					order: 7
+				},
+				{
+					title: 'Expressions',
+					path: '04-language-reference/08-expressions',
+					order: 8
+				}
+			]
+		},
+		{
+			title: 'Integration',
+			path: '05-integration',
+			order: 6,
+			children: [
+				{
+					title: 'API Reference',
+					path: '05-integration/01-api-reference',
+					order: 1
+				},
+				{
+					title: 'Export Formats',
+					path: '05-integration/02-export-formats',
+					order: 2
+				},
+				{
+					title: 'Workflows',
+					path: '05-integration/03-workflows',
+					order: 3
+				}
+			]
+		},
+		{
+			title: 'Best Practices',
+			path: '06-best-practices',
+			order: 7,
+			children: [
+				{
+					title: 'Best Practices',
+					path: '06-best-practices/01-best-practices',
 					order: 1
 				}
-				,
+			]
+		},
+		{
+			title: 'Help',
+			path: '07-help',
+			order: 8,
+			children: [
 				{
-					title: 'Authoring TokenScript DSL with LLMs',
-					path: 'dsl-user-guide/LLM_AUTHORING_GUIDE',
+					title: 'Troubleshooting',
+					path: '07-help/01-troubleshooting',
+					order: 1
+				},
+				{
+					title: 'FAQ',
+					path: '07-help/02-faq',
 					order: 2
 				}
 			]

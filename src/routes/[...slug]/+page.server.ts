@@ -39,6 +39,8 @@ export const load: PageServerLoad = async ({ params }) => {
 	if (slug === '') {
 		filePath = path.join('src/docs', 'index.md');
 	} else {
+		// Handle nested directories: convert slug like "01-getting-started/01-introduction" 
+		// to file path "src/docs/01-getting-started/01-introduction.md"
 		filePath = path.join('src/docs', `${slug}.md`);
 	}
 	
