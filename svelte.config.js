@@ -5,6 +5,8 @@ import { createHighlighter } from 'shiki';
 import tokenscriptGrammar from './src/lib/syntax/tokenscript.tmLanguage.json' with { type: 'json' };
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import { readdirSync, statSync } from 'fs';
+import { join } from 'path';
 
 // Create a singleton highlighter instance
 let highlighterPromise;
@@ -30,6 +32,46 @@ function getHighlighter() {
 	}
 	return highlighterPromise;
 }
+
+// Generate prerender entries from markdown files
+function getPrerenderEntries() {
+	const entries = ['/']; // Always include root
+	const docsDir = 'src/docs';
+	
+	function scanDirectory(dir, basePath = '') {
+		try {
+			const items = readdirSync(dir);
+			for (const item of items) {
+				const fullPath = join(dir, item);
+				const stat = statSync(fullPath);
+				
+				if (stat.isDirectory()) {
+					// Recursively scan subdirectories
+					scanDirectory(fullPath, basePath ? `${basePath}/${item}` : item);
+				} else if (item.endsWith('.md') && item !== 'README.md') {
+					// Convert file path to route path
+					const routePath = basePath 
+						? `/${basePath}/${item.replace('.md', '')}`
+						: `/${item.replace('.md', '')}`;
+					
+					// Special case: index.md becomes /
+					if (item === 'index.md' && !basePath) {
+						continue; // Already added
+					} else {
+						entries.push(routePath);
+					}
+				}
+			}
+		} catch (err) {
+			console.warn(`Could not scan directory ${dir}:`, err);
+		}
+	}
+	
+	scanDirectory(docsDir);
+	return entries;
+}
+
+const dev = process.argv.includes('dev');
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -70,11 +112,11 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: '/tokenScript-Documentation'
+			base: dev ? '' : '/tokenScript-Documentation'
 		},
 		prerender: {
 			handleHttpError: 'warn',
-			entries: ['*']
+			entries: getPrerenderEntries()
 		}
 	}
 };
