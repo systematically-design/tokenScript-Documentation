@@ -23,6 +23,10 @@ function getHighlighter() {
 				'json',
 				'bash',
 				'shell',
+				'python',
+				'regex',
+				'yaml',
+				'markdown',
 				{
 					...tokenscriptGrammar,
 					name: 'tokenscript'
@@ -116,6 +120,7 @@ const config = {
 		},
 		prerender: {
 			handleHttpError: 'warn',
+			handleMissingId: 'warn',
 			entries: getPrerenderEntries()
 		}
 	}

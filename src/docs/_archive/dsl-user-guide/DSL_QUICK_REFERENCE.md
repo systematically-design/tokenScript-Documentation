@@ -347,4 +347,4 @@ node build.js          // Compile examples
 
 ---
 
-**Need more details?** See the [complete User Guide](docs/user-guide/) for step-by-step explanations and examples.
+**Need more details?** See the documentation for step-by-step explanations and examples.
