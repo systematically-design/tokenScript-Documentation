@@ -68,7 +68,7 @@ export const load: PageServerLoad = async ({ params }) => {
 		});
 		
 		return {
-			title: data.title || 'DocsSite',
+			title: data.title || 'Systematically Documentation',
 			content: result?.code || '',
 			frontmatter: data,
 			slug: slug

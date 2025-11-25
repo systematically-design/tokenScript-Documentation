@@ -1,10 +1,10 @@
 ---
-title: TokenScript Documentation
+title: Systematically Documentation
 ---
 
-# TokenScript Documentation
+# Systematically Documentation
 
-Welcome to the unified TokenScript documentation! This documentation combines guides for both Systematically (the visual editor platform) and the TokenScript DSL (language reference) into a single, progressive learning path.
+Welcome to the Systematically documentation! This documentation combines guides for both Systematically (the visual editor platform) and the TokenScript DSL (language reference) into a single, progressive learning path.
 
 ## What is Systematically?
 

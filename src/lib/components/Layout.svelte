@@ -6,7 +6,7 @@
 	import { base } from '$app/paths';
 	import type { NavigationItem, TOCHeading } from '$lib/types';
 
-	export const title = 'DocsSite';
+	export const title = 'Systematically Documentation';
 	export let navigation: NavigationItem[] = [];
 	
 	let tableOfContents: TOCHeading[] = [];
@@ -57,7 +57,7 @@
 <div class="layout">
 	<header class="header">
 		<div class="header-content">
-			<a href="{base}/" class="site-title">DocsSitez</a>
+			<a href="{base}/" class="site-title">Systematically Documentation</a>
 		</div>
 	</header>
 	

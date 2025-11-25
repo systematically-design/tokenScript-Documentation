@@ -4,7 +4,7 @@ export function generateNavigation(): NavigationItem[] {
 	// Navigation based on our docs structure
 	return [
 		{
-			title: 'TokenScript Documentation',
+			title: 'Systematically Documentation',
 			path: '',
 			order: 1
 		},

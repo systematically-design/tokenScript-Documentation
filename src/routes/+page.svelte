@@ -6,7 +6,7 @@
 
 <svelte:head>
 	<title>{data.title}</title>
-	<meta name="description" content={data.frontmatter?.description || `${data.title} - DocsSite`} />
+	<meta name="description" content={data.frontmatter?.description || `${data.title} - Systematically Documentation`} />
 </svelte:head>
 
 <div>
