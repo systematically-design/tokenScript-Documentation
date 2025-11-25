@@ -1,6 +1,6 @@
 # Troubleshooting
 
-This guide helps you solve common issues and errors in Systematically. Whether you're using the visual editor or writing TokenScript DSL code, check here first!
+This guide helps you solve common issues and errors in Systematically. Whether you're writing TokenScript DSL code or working with compiled tokens, check here first!
 
 ## Table of Contents
 

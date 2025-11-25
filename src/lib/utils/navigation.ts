@@ -19,19 +19,14 @@ export function generateNavigation(): NavigationItem[] {
 					order: 1
 				},
 				{
-					title: 'Quick Start: App',
-					path: '01-getting-started/02-quick-start-app',
+					title: 'Quick Start',
+					path: '01-getting-started/02-quick-start',
 					order: 2
-				},
-				{
-					title: 'Quick Start: DSL',
-					path: '01-getting-started/03-quick-start-dsl',
-					order: 3
 				}
 			]
 		},
 		{
-			title: 'Using the App',
+			title: 'Using Systematically',
 			path: '02-using-the-app',
 			order: 3,
 			children: [

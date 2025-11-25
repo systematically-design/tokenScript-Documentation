@@ -1,6 +1,6 @@
 # Creating Tokens
 
-This section covers how to create different types of design tokens in TokenScript. Whether you're using the visual editor or writing DSL code, these guides will help you build comprehensive design systems.
+This section covers how to create different types of design tokens by writing TokenScript DSL code in Systematically. These guides will help you build comprehensive design systems.
 
 ## Guides in This Section
 
@@ -65,19 +65,13 @@ token2 = $token1
 ## Common Patterns
 
 Each guide includes:
-- Step-by-step instructions (app perspective)
-- DSL syntax examples (code perspective)
+- Step-by-step instructions for writing TokenScript DSL code
+- Complete DSL syntax examples
 - Real-world examples
 - Best practices
 - Troubleshooting tips
 
-## App vs DSL
-
-These guides cover both perspectives:
-- **App perspective**: How to create tokens using the visual editor
-- **DSL perspective**: How to write the same tokens in code
-
-Both approaches create the same tokens—choose what works best for you!
+All tokens are created by writing TokenScript DSL code in Systematically. The app provides tools like syntax highlighting, autocomplete, live preview, and visualizations to help you write and work with your DSL code.
 
 ## Next Steps
 

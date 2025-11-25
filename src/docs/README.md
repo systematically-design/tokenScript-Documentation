@@ -1,52 +1,34 @@
 # TokenScript Documentation
 
-Welcome to the unified TokenScript documentation! This documentation combines guides for both Systematically (the visual editor platform) and the TokenScript DSL (language reference) into a single, progressive learning path.
+Welcome to the Systematically documentation! Systematically is an app powered by TokenScript DSL where you write DSL code to generate design tokens.
 
 ## What is Systematically?
 
-Systematically is a platform for creating and managing design tokens—the building blocks of your design system. It consists of:
+Systematically is an app for creating and managing design tokens—the building blocks of your design system. You write TokenScript DSL code in Systematically to create tokens, and the app provides:
 
-- **Systematically**: A visual editor (SvelteKit-based) with Monaco editor, live preview, and visualizations
-- **TokenScript DSL**: A simple, human-readable language for defining design tokens programmatically
+- **Monaco-powered code editor** - The same editor used in VS Code, with syntax highlighting and autocomplete
+- **Live preview** - See your tokens compile in real-time as you type
+- **Visualizations** - Interactive displays of your scales and tokens
+- **Cloud sync** - Automatic saving and cross-device access
+- **Multi-page workspace** - Organize tokens into sets or groups
 
-## Learning Paths
+## Getting Started
 
-Choose the path that fits your needs:
+Follow this learning path to master Systematically:
 
-### 🎨 For Visual Designers (App-First Path)
-
-Start with the visual editor and learn the DSL as you go:
-
-1. **[Introduction](01-getting-started/01-introduction.md)** - What is Systematically?
-2. **[Quick Start: App](01-getting-started/02-quick-start-app.md)** - Get started with the visual editor
-3. **[Using the App](02-using-the-app/01-interface-overview.md)** - Master the interface
-4. **[Creating Tokens](03-creating-tokens/README.md)** - Learn to create tokens visually
-5. **[Language Reference](04-language-reference/README.md)** - Deep dive into DSL syntax (when ready)
-
-### 💻 For Developers (DSL-First Path)
-
-Start with the language and use the app as needed:
-
-1. **[Introduction](01-getting-started/01-introduction.md)** - What is Systematically?
-2. **[Quick Start: DSL](01-getting-started/03-quick-start-dsl.md)** - Write your first tokens
-3. **[Language Reference](04-language-reference/README.md)** - Complete syntax reference
-4. **[Creating Tokens](03-creating-tokens/README.md)** - Token creation patterns
-5. **[Integration](05-integration/01-api-reference.md)** - API and export formats
-
-### 🚀 Quick Start (Either Path)
-
-- **New to design tokens?** → Start with [App Quick Start](01-getting-started/02-quick-start-app.md)
-- **Familiar with design tokens?** → Start with [DSL Quick Start](01-getting-started/03-quick-start-dsl.md)
-- **Need API docs?** → Jump to [API Reference](05-integration/01-api-reference.md)
+1. **Introduction** - What is Systematically and how it works
+2. **Quick Start** - Write your first TokenScript DSL code
+3. **Using Systematically** - Master the interface and features
+4. **Creating Tokens** - Learn to create different types of tokens
+5. **Language Reference** - Complete TokenScript DSL syntax guide
 
 ## Documentation Structure
 
 ### 01. Getting Started
 - [Introduction](01-getting-started/01-introduction.md) - Overview of Systematically
-- [Quick Start: App](01-getting-started/02-quick-start-app.md) - Visual editor introduction
-- [Quick Start: DSL](01-getting-started/03-quick-start-dsl.md) - Language introduction
+- [Quick Start](01-getting-started/02-quick-start.md) - Write your first TokenScript DSL code
 
-### 02. Using the App
+### 02. Using Systematically
 - [Interface Overview](02-using-the-app/01-interface-overview.md) - Understanding the UI
 - [Pages & Workspace](02-using-the-app/02-pages-and-workspace.md) - Organizing your tokens
 - [Editor Features](02-using-the-app/03-editor-features.md) - Autocomplete, syntax highlighting, shortcuts
@@ -100,12 +82,7 @@ Tokens can reference other tokens, creating relationships and eliminating duplic
 ### Visualizations
 Systematically automatically creates visualizations of your scales, helping you see how tokens work together.
 
-## Cross-References
-
-Throughout this documentation, you'll find:
-- **App perspective**: How to use features in the visual editor
-- **DSL perspective**: How to write the same tokens in code
-- **Cross-links**: Links between app and DSL sections
+Throughout this documentation, you'll learn how to write TokenScript DSL code in Systematically to create design tokens. The app provides powerful tools to help you write, preview, and visualize your tokens.
 
 ## Contributing
 

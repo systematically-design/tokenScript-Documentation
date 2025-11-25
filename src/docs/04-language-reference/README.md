@@ -1,6 +1,6 @@
 # Language Reference
 
-Complete reference guide to the TokenScript DSL syntax and features. This section provides comprehensive documentation for developers and advanced users.
+Complete reference guide to TokenScript DSL—the language you write in Systematically to generate design tokens. This section provides comprehensive syntax documentation for all TokenScript DSL features.
 
 ## Guides in This Section
 
@@ -39,12 +39,12 @@ spacing
 
 ## Using This Reference
 
-This reference is designed for:
-- **Developers** integrating TokenScript into applications
-- **Advanced users** who want to understand the language deeply
-- **Tool builders** creating TokenScript integrations
+This reference covers all TokenScript DSL syntax and features you can use in Systematically. Whether you're:
+- **Writing tokens** in Systematically
+- **Learning the language** syntax and capabilities
+- **Understanding advanced features** like scales, references, and expressions
 
-For tutorials and step-by-step guides, see Creating Tokens in the navigation.
+For step-by-step tutorials on creating tokens, see Creating Tokens in the navigation.
 
 ## Next Steps
 

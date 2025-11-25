@@ -1,6 +1,6 @@
 # Introduction to Systematically
 
-Systematically is a platform for creating and managing design tokens—the building blocks of your design system. Whether you're a designer who prefers visual tools or a developer who loves code, Systematically has you covered.
+Systematically is an app powered by TokenScript DSL for creating and managing design tokens—the building blocks of your design system. You write TokenScript DSL code in Systematically to create tokens, and the app provides powerful tools to help you work with your code.
 
 ## What Are Design Tokens?
 
@@ -17,30 +17,22 @@ buttonBackground = $primaryColor
 cardPadding = $baseSpacing
 ```
 
-## Systematically Platform
+## What is Systematically?
 
-Systematically consists of two main components:
+Systematically is an app where you write TokenScript DSL code to generate design tokens. TokenScript DSL is a simple, human-readable language with:
 
-### 1. Systematically (Visual Editor)
-
-A web-based visual editor that makes creating tokens intuitive:
-- **Monaco-powered code editor** - The same editor used in VS Code
-- **Live preview** - See your tokens compile in real-time
-- **Visualizations** - Interactive displays of your scales
-- **Cloud sync** - Automatic saving and cross-device access
-- **Multi-page workspace** - Organize tokens into sets or groups
-
-**Best for**: Designers, visual learners, quick prototyping
-
-### 2. TokenScript DSL (Language)
-
-A simple, human-readable language for defining tokens:
 - **Indentation-based syntax** - Clean and readable
 - **Powerful scales** - Generate sequences automatically
 - **References** - Create relationships between tokens
 - **Mathematical expressions** - Calculate derived values
 
-**Best for**: Developers, version control, programmatic generation
+When you write TokenScript DSL in Systematically, you get:
+
+- **Monaco-powered code editor** - The same editor used in VS Code, with syntax highlighting and autocomplete
+- **Live preview** - See your tokens compile in real-time as you type
+- **Visualizations** - Interactive displays of your scales and tokens
+- **Cloud sync** - Automatic saving and cross-device access
+- **Multi-page workspace** - Organize tokens into sets or groups
 
 ## Why Use Systematically?
 
@@ -50,8 +42,8 @@ Create systematic design systems with scales that ensure consistency across your
 ### Efficiency
 Generate dozens of tokens from a single scale definition. Change one value, update everything.
 
-### Flexibility
-Use the visual editor for quick iteration or write DSL code for version control and automation.
+### Powerful Tools
+Write DSL code with the help of a Monaco editor, live preview, and visualizations that make working with tokens intuitive and efficient.
 
 
 ## Key Features
@@ -76,19 +68,12 @@ See your scales come to life with interactive visualizations that help you under
 
 ## Getting Started
 
-### New to Design Tokens?
+To get started with Systematically:
 
-Start with the **visual editor**:
-1. Quick Start: App - Learn the interface
-2. Creating Tokens - Start creating tokens visually
-3. Language Reference - Learn DSL syntax when ready
-
-### Familiar with Design Tokens?
-
-Start with the **DSL**:
-1. Quick Start: DSL - Write your first tokens
-2. Language Reference - Complete syntax guide
-3. Creating Tokens - Token creation patterns
+1. **Quick Start** - Write your first TokenScript DSL code and see it compile
+2. **Using Systematically** - Learn the interface and features
+3. **Creating Tokens** - Learn to create different types of tokens
+4. **Language Reference** - Complete TokenScript DSL syntax guide
 
 ## Example: Your First Design System
 
@@ -129,11 +114,11 @@ This creates:
 
 ## Next Steps
 
-- **Visual learners**: Quick Start: App
-- **Code-first**: Quick Start: DSL
+- **Get started**: Quick Start - Write your first TokenScript DSL code
+- **Learn the interface**: Using Systematically
 - **Explore features**: Creating Tokens
 
 ---
 
-Ready to dive in? Choose your path above!
+Ready to dive in? Use the navigation to get started!
 
