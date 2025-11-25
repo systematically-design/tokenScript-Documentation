@@ -117,7 +117,7 @@ No, tokens must be defined before they're referenced.
 - RGBA: `rgba(255, 0, 0, 0.5)`
 - HSL: `hsl(0, 100%, 50%)`
 - HSLA: `hsla(0, 100%, 50%, 0.5)`
-- OKLCH: `oklch(0.65, 0.2, 250)`
+- OKLCH: `oklch(65% 0.2 250deg)`
 - Named: `blue`, `red`, etc.
 
 ### Can I create color scales?

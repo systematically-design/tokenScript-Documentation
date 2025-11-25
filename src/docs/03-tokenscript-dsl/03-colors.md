@@ -52,7 +52,7 @@ hslColor = hsl(217, 91%, 60%)
 hslaColor = hsla(217, 91%, 60%, 0.5)
 
 // OKLCH (perceptually uniform)
-oklchColor = oklch(0.65, 0.2, 250)
+oklchColor = oklch(65% 0.2 250deg)
 
 // Named colors
 namedColor = blue
@@ -146,13 +146,13 @@ overlay = hsla(217, 91%, 60%, 0.5)
 
 **DSL Input:**
 ```tokenscript
-primary = oklch(0.65, 0.2, 250)
+primary = oklch(65% 0.2 250deg)
 ```
 
 **JSON Output:**
 ```json
 {
-  "primary": "oklch(0.65, 0.2, 250)"
+  "primary": "oklch(65% 0.2 250deg)"
 }
 ```
 

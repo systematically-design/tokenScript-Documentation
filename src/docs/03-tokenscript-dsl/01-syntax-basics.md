@@ -118,7 +118,7 @@ hslColor = hsl(217, 91%, 60%)
 hslaColor = hsla(217, 91%, 60%, 0.5)
 
 // OKLCH
-oklchColor = oklch(0.65, 0.2, 250)
+oklchColor = oklch(65% 0.2 250deg)
 
 // Named colors
 namedColor = blue
