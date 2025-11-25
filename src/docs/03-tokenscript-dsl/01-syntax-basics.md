@@ -8,11 +8,22 @@ Learn the fundamental TokenScript DSL syntax for creating simple tokens—the fo
 
 The simplest form: `name = value`
 
+**DSL Input:**
 ```tokenscript
 spacing = 8
 color = #ff0000
 label = "Hello World"
 enabled = true
+```
+
+**JSON Output:**
+```json
+{
+  "spacing": 8,
+  "color": "#ff0000",
+  "label": "Hello World",
+  "enabled": true
+}
 ```
 
 ### Comments
@@ -28,6 +39,7 @@ spacing = 8  // Inline comment
 
 Use indentation (spaces or tabs) to create nested groups:
 
+**DSL Input:**
 ```tokenscript
 colors
   primary = #3B82F6
@@ -37,25 +49,54 @@ colors
     dark = #111827
 ```
 
+**JSON Output:**
+```json
+{
+  "colors.primary": "#3B82F6",
+  "colors.secondary": "#8B5CF6",
+  "colors.neutral.light": "#F3F4F6",
+  "colors.neutral.dark": "#111827"
+}
+```
+
 This creates tokens: `colors.primary`, `colors.secondary`, `colors.neutral.light`, `colors.neutral.dark`
 
 ## Value Types
 
 ### Numbers
 
+**DSL Input:**
 ```tokenscript
 spacing = 8
 fontSize = 16.5
 ratio = 1.25
 ```
 
+**JSON Output:**
+```json
+{
+  "spacing": 8,
+  "fontSize": 16.5,
+  "ratio": 1.25
+}
+```
+
 ### Strings
 
+**DSL Input:**
 ```tokenscript
 fontFamily = "Inter"
 label = "Primary Button"
 // Unquoted strings work too
 fontFamily = Inter
+```
+
+**JSON Output:**
+```json
+{
+  "fontFamily": "Inter",
+  "label": "Primary Button"
+}
 ```
 
 ### Colors
@@ -85,9 +126,18 @@ namedColor = blue
 
 ### Booleans
 
+**DSL Input:**
 ```tokenscript
 enabled = true
 disabled = false
+```
+
+**JSON Output:**
+```json
+{
+  "enabled": true,
+  "disabled": false
+}
 ```
 
 ## Creating Simple Tokens
@@ -169,14 +219,25 @@ durationNormal = 300ms
 
 Reference other tokens using `$`:
 
+**DSL Input:**
 ```tokenscript
 baseSpacing = 8
 cardPadding = $baseSpacing
 buttonPadding = $baseSpacing * 2
 ```
 
+**JSON Output:**
+```json
+{
+  "baseSpacing": 8,
+  "cardPadding": 8,
+  "buttonPadding": 16
+}
+```
+
 **Nested References:**
 
+**DSL Input:**
 ```tokenscript
 colors
   primary = #3B82F6
@@ -185,10 +246,19 @@ button
   backgroundColor = $colors.primary
 ```
 
+**JSON Output:**
+```json
+{
+  "colors.primary": "#3B82F6",
+  "button.backgroundColor": "#3B82F6"
+}
+```
+
 ## Type Annotations
 
 Specify token types using `:type`:
 
+**DSL Input:**
 ```tokenscript
 // Color type
 primary:color = #3B82F6
@@ -200,6 +270,16 @@ padding:spacing = 16
 colors : colors
   primary = #3B82F6
   secondary = #8B5CF6
+```
+
+**JSON Output:**
+```json
+{
+  "primary": "#3B82F6",
+  "padding": 16,
+  "colors.primary": "#3B82F6",
+  "colors.secondary": "#8B5CF6"
+}
 ```
 
 ## Best Practices

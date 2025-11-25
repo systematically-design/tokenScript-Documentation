@@ -6,6 +6,7 @@ Complete guide to typography tokens and scales in TokenScript DSL.
 
 ### Basic Typography Tokens
 
+**DSL Input:**
 ```tokenscript
 // Font Families
 fonts
@@ -36,6 +37,28 @@ lineHeight
   relaxed = 1.8
 ```
 
+**JSON Output:**
+```json
+{
+  "fonts.sans": "Inter, system-ui, sans-serif",
+  "fonts.serif": "Georgia, serif",
+  "fonts.mono": "Menlo, monospace",
+  "fontSize.xs": 12,
+  "fontSize.sm": 14,
+  "fontSize.md": 16,
+  "fontSize.lg": 18,
+  "fontSize.xl": 20,
+  "fontWeight.light": 300,
+  "fontWeight.normal": 400,
+  "fontWeight.medium": 500,
+  "fontWeight.semibold": 600,
+  "fontWeight.bold": 700,
+  "lineHeight.tight": 1.2,
+  "lineHeight.normal": 1.5,
+  "lineHeight.relaxed": 1.8
+}
+```
+
 ### Typography Scales
 
 Create systematic typography systems:
@@ -59,6 +82,7 @@ This creates font sizes: `[12, 15, 18.75, 23.4, 29.3]`
 
 **Font Families:**
 
+**DSL Input:**
 ```tokenscript
 fonts
   sans = "Inter, system-ui, sans-serif"
@@ -66,8 +90,18 @@ fonts
   mono = "Menlo, monospace"
 ```
 
+**JSON Output:**
+```json
+{
+  "fonts.sans": "Inter, system-ui, sans-serif",
+  "fonts.serif": "Georgia, serif",
+  "fonts.mono": "Menlo, monospace"
+}
+```
+
 **Font Sizes:**
 
+**DSL Input:**
 ```tokenscript
 fontSize
   xs = 12
@@ -77,8 +111,20 @@ fontSize
   xl = 20
 ```
 
+**JSON Output:**
+```json
+{
+  "fontSize.xs": 12,
+  "fontSize.sm": 14,
+  "fontSize.md": 16,
+  "fontSize.lg": 18,
+  "fontSize.xl": 20
+}
+```
+
 **Font Weights:**
 
+**DSL Input:**
 ```tokenscript
 fontWeight
   light = 300
@@ -86,6 +132,17 @@ fontWeight
   medium = 500
   semibold = 600
   bold = 700
+```
+
+**JSON Output:**
+```json
+{
+  "fontWeight.light": 300,
+  "fontWeight.normal": 400,
+  "fontWeight.medium": 500,
+  "fontWeight.semibold": 600,
+  "fontWeight.bold": 700
+}
 ```
 
 **Common Weights:**

@@ -8,6 +8,7 @@ Composite tokens group related design properties into structured tokens. Perfect
 
 Instead of separate tokens:
 
+**DSL Input:**
 ```tokenscript
 headingFontSize = 24
 headingLineHeight = 1.5
@@ -15,14 +16,40 @@ headingFontWeight = 700
 headingFontFamily = "Inter"
 ```
 
+**JSON Output:**
+```json
+{
+  "headingFontSize": 24,
+  "headingLineHeight": 1.5,
+  "headingFontWeight": 700,
+  "headingFontFamily": "Inter"
+}
+```
+
 Use a composite token:
 
+**DSL Input:**
 ```tokenscript
 heading:typography
   fontSize = 24
   lineHeight = 1.5
   fontWeight = 700
   fontFamily = "Inter"
+```
+
+**JSON Output (W3C Format):**
+```json
+{
+  "heading": {
+    "$type": "typography",
+    "$value": {
+      "fontSize": { "value": 24, "unit": "px" },
+      "lineHeight": 1.5,
+      "fontWeight": 700,
+      "fontFamily": "Inter"
+    }
+  }
+}
 ```
 
 This creates a structured token that groups all typography properties together.
@@ -33,6 +60,7 @@ This creates a structured token that groups all typography properties together.
 
 Groups font-related properties:
 
+**DSL Input:**
 ```tokenscript
 heading:typography
   fontSize = 24
@@ -48,6 +76,31 @@ body:typography
   fontFamily = "Inter, sans-serif"
 ```
 
+**JSON Output (W3C Format):**
+```json
+{
+  "heading": {
+    "$type": "typography",
+    "$value": {
+      "fontSize": { "value": 24, "unit": "px" },
+      "lineHeight": 1.5,
+      "fontWeight": 700,
+      "fontFamily": "Inter, sans-serif",
+      "letterSpacing": "-0.025em"
+    }
+  },
+  "body": {
+    "$type": "typography",
+    "$value": {
+      "fontSize": { "value": 16, "unit": "px" },
+      "lineHeight": 1.5,
+      "fontWeight": 400,
+      "fontFamily": "Inter, sans-serif"
+    }
+  }
+}
+```
+
 **Required Properties:**
 - `fontSize` - Font size in pixels
 - `lineHeight` - Line height (unitless number)
@@ -61,11 +114,26 @@ body:typography
 
 Groups border properties:
 
+**DSL Input:**
 ```tokenscript
 border:border
   width = 1
   style = solid
   color = #000000
+```
+
+**JSON Output (W3C Format):**
+```json
+{
+  "border": {
+    "$type": "border",
+    "$value": {
+      "width": { "value": 1, "unit": "px" },
+      "style": "solid",
+      "color": "#000000"
+    }
+  }
+}
 ```
 
 **Properties:**
@@ -77,6 +145,7 @@ border:border
 
 Groups shadow properties:
 
+**DSL Input:**
 ```tokenscript
 shadow:shadow
   offsetX = 0
@@ -84,6 +153,22 @@ shadow:shadow
   blur = 8
   spread = 0
   color = rgba(0, 0, 0, 0.1)
+```
+
+**JSON Output (W3C Format):**
+```json
+{
+  "shadow": {
+    "$type": "shadow",
+    "$value": {
+      "offsetX": { "value": 0, "unit": "px" },
+      "offsetY": { "value": 4, "unit": "px" },
+      "blur": { "value": 8, "unit": "px" },
+      "spread": { "value": 0, "unit": "px" },
+      "color": "rgba(0, 0, 0, 0.1)"
+    }
+  }
+}
 ```
 
 **Properties:**

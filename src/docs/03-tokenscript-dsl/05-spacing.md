@@ -6,6 +6,7 @@ Complete guide to spacing tokens and systems in TokenScript DSL.
 
 ### Basic Spacing Tokens
 
+**DSL Input:**
 ```tokenscript
 spacing
   xs = 4
@@ -15,16 +16,39 @@ spacing
   xl = 32
 ```
 
+**JSON Output:**
+```json
+{
+  "spacing.xs": 4,
+  "spacing.sm": 8,
+  "spacing.md": 16,
+  "spacing.lg": 24,
+  "spacing.xl": 32
+}
+```
+
 ### Spacing Scales
 
 Create systematic spacing systems:
 
+**DSL Input:**
 ```tokenscript
 spacing
   /numberScale : linear
     base = 8
     increment = 4
     steps = ["xs", "sm", "md", "lg", "xl"]
+```
+
+**JSON Output:**
+```json
+{
+  "spacing.xs": 8,
+  "spacing.sm": 12,
+  "spacing.md": 16,
+  "spacing.lg": 20,
+  "spacing.xl": 24
+}
 ```
 
 **Generated values:**
@@ -40,6 +64,7 @@ spacing
 
 **Simple Values:**
 
+**DSL Input:**
 ```tokenscript
 spacing
   xs = 4
@@ -49,12 +74,33 @@ spacing
   xl = 32
 ```
 
+**JSON Output:**
+```json
+{
+  "spacing.xs": 4,
+  "spacing.sm": 8,
+  "spacing.md": 16,
+  "spacing.lg": 24,
+  "spacing.xl": 32
+}
+```
+
 **With Units:**
 
+**DSL Input:**
 ```tokenscript
 baseSpacing = 16px
 smallSpacing = 8px
 largeSpacing = 32px
+```
+
+**JSON Output:**
+```json
+{
+  "baseSpacing": "16px",
+  "smallSpacing": "8px",
+  "largeSpacing": "32px"
+}
 ```
 
 **Spacing Units:**

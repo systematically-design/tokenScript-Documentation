@@ -20,6 +20,7 @@ spacing
 
 Use a scale to generate them automatically:
 
+**DSL Input:**
 ```tokenscript
 // Do this instead
 spacing
@@ -29,16 +30,39 @@ spacing
     steps = ["xs", "sm", "md", "lg", "xl"]
 ```
 
+**JSON Output:**
+```json
+{
+  "spacing.xs": 4,
+  "spacing.sm": 8,
+  "spacing.md": 12,
+  "spacing.lg": 16,
+  "spacing.xl": 20
+}
+```
+
 ### Creating Your First Scale
 
 **Linear Scale** (adds the same amount each step):
 
+**DSL Input:**
 ```tokenscript
 spacing
   /numberScale : linear
     base = 8
     increment = 4
     steps = ["xs", "sm", "md", "lg", "xl"]
+```
+
+**JSON Output:**
+```json
+{
+  "spacing.xs": 8,
+  "spacing.sm": 12,
+  "spacing.md": 16,
+  "spacing.lg": 20,
+  "spacing.xl": 24
+}
 ```
 
 **Generated values:**
@@ -50,12 +74,23 @@ spacing
 
 **Modular Scale** (multiplies by a ratio each step):
 
+**DSL Input:**
 ```tokenscript
 typography
   /numberScale : modular
     base = 16
     ratio = 1.25
     steps = ["sm", "md", "lg", "xl"]
+```
+
+**JSON Output:**
+```json
+{
+  "typography.sm": 16,
+  "typography.md": 20,
+  "typography.lg": 25,
+  "typography.xl": 31.25
+}
 ```
 
 **Generated values:**
@@ -88,6 +123,7 @@ groupName
 
 **Example with named steps:**
 
+**DSL Input:**
 ```tokenscript
 spacing
   /numberScale : linear
@@ -96,14 +132,36 @@ spacing
     steps = ["xs", "sm", "md", "lg", "xl"]
 ```
 
+**JSON Output:**
+```json
+{
+  "spacing.xs": 8,
+  "spacing.sm": 12,
+  "spacing.md": 16,
+  "spacing.lg": 20,
+  "spacing.xl": 24
+}
+```
+
 **Example with peak:**
 
+**DSL Input:**
 ```tokenscript
 spacing
   /numberScale : linear
     base = 8
     peak = 32
     steps = ["xs", "sm", "md", "lg"]
+```
+
+**JSON Output:**
+```json
+{
+  "spacing.xs": 8,
+  "spacing.sm": 14.67,
+  "spacing.md": 21.33,
+  "spacing.lg": 32
+}
 ```
 
 This evenly distributes values from 8 to 32.
@@ -188,6 +246,7 @@ Apply transformations to scales:
 
 **Round Values:**
 
+**DSL Input:**
 ```tokenscript
 spacing
   /numberScale : linear
@@ -197,11 +256,21 @@ spacing
   /roundTo(4)
 ```
 
+**JSON Output:**
+```json
+{
+  "spacing.xs": 8,
+  "spacing.sm": 12,
+  "spacing.md": 12
+}
+```
+
 **Before rounding:** 7, 10, 13  
 **After rounding:** 8, 12, 12
 
 **Transform Values:**
 
+**DSL Input:**
 ```tokenscript
 spacing
   /numberScale : linear
@@ -209,6 +278,15 @@ spacing
     increment = 4
     steps = ["xs", "sm", "md"]
   /transform(each * 1.5)
+```
+
+**JSON Output:**
+```json
+{
+  "spacing.xs": 12,
+  "spacing.sm": 18,
+  "spacing.md": 24
+}
 ```
 
 **Before transform:** 8, 12, 16  
@@ -235,6 +313,7 @@ spacing
 
 **Accessing Individual Steps:**
 
+**DSL Input:**
 ```tokenscript
 spacing
   /numberScale : linear
@@ -245,6 +324,19 @@ spacing
 // Use individual steps
 buttonPadding = $spacing.md
 cardMargin = $spacing.lg
+```
+
+**JSON Output:**
+```json
+{
+  "spacing.xs": 8,
+  "spacing.sm": 12,
+  "spacing.md": 16,
+  "spacing.lg": 20,
+  "spacing.xl": 24,
+  "buttonPadding": 16,
+  "cardMargin": 20
+}
 ```
 
 **Referencing the Entire Scale:**

@@ -6,6 +6,7 @@ Complete guide to working with colors in TokenScript DSL—from basic color toke
 
 ### Basic Color Tokens
 
+**DSL Input:**
 ```tokenscript
 // Brand Colors
 primaryColor = #007acc
@@ -17,6 +18,19 @@ successColor = #00a86b
 errorColor = #ff3333
 warningColor = #ffaa00
 infoColor = #007acc
+```
+
+**JSON Output:**
+```json
+{
+  "primaryColor": "#007acc",
+  "secondaryColor": "#00a86b",
+  "accentColor": "#ff6b35",
+  "successColor": "#00a86b",
+  "errorColor": "#ff3333",
+  "warningColor": "#ffaa00",
+  "infoColor": "#007acc"
+}
 ```
 
 ### Color Formats
@@ -79,34 +93,85 @@ Creates 6 colors evenly spaced around the color wheel.
 ### Color Formats
 
 **Hex Colors:**
+
+**DSL Input:**
 ```tokenscript
 primary = #3B82F6        // Standard hex
 accent = #f00            // Short hex (3 digits)
 overlay = #3B82F680      // With alpha channel (8 digits)
 ```
 
+**JSON Output:**
+```json
+{
+  "primary": "#3B82F6",
+  "accent": "#f00",
+  "overlay": "#3B82F680"
+}
+```
+
 **RGB/RGBA:**
+
+**DSL Input:**
 ```tokenscript
 primary = rgb(59, 130, 246)
 overlay = rgba(59, 130, 246, 0.5)
 ```
 
+**JSON Output:**
+```json
+{
+  "primary": "rgb(59, 130, 246)",
+  "overlay": "rgba(59, 130, 246, 0.5)"
+}
+```
+
 **HSL/HSLA:**
+
+**DSL Input:**
 ```tokenscript
 primary = hsl(217, 91%, 60%)
 overlay = hsla(217, 91%, 60%, 0.5)
 ```
 
+**JSON Output:**
+```json
+{
+  "primary": "hsl(217, 91%, 60%)",
+  "overlay": "hsla(217, 91%, 60%, 0.5)"
+}
+```
+
 **OKLCH:**
+
+**DSL Input:**
 ```tokenscript
 primary = oklch(0.65, 0.2, 250)
 ```
 
+**JSON Output:**
+```json
+{
+  "primary": "oklch(0.65, 0.2, 250)"
+}
+```
+
 **Named Colors:**
+
+**DSL Input:**
 ```tokenscript
 primary = blue
 background = white
 text = black
+```
+
+**JSON Output:**
+```json
+{
+  "primary": "blue",
+  "background": "white",
+  "text": "black"
+}
 ```
 
 ### Color Scales
@@ -228,6 +293,7 @@ vibrantPalette
 
 ### Simple Color System
 
+**DSL Input:**
 ```tokenscript
 colors
   primary = #3B82F6
@@ -237,8 +303,20 @@ colors
   error = #EF4444
 ```
 
+**JSON Output:**
+```json
+{
+  "colors.primary": "#3B82F6",
+  "colors.secondary": "#8B5CF6",
+  "colors.success": "#10B981",
+  "colors.warning": "#F59E0B",
+  "colors.error": "#EF4444"
+}
+```
+
 ### Nested Color System
 
+**DSL Input:**
 ```tokenscript
 colors
   primary
@@ -253,6 +331,21 @@ colors
     light = #F3F4F6
     medium = #9CA3AF
     dark = #111827
+```
+
+**JSON Output:**
+```json
+{
+  "colors.primary.main": "#3B82F6",
+  "colors.primary.light": "#60A5FA",
+  "colors.primary.dark": "#2563EB",
+  "colors.secondary.main": "#8B5CF6",
+  "colors.secondary.light": "#A78BFA",
+  "colors.secondary.dark": "#7C3AED",
+  "colors.neutral.light": "#F3F4F6",
+  "colors.neutral.medium": "#9CA3AF",
+  "colors.neutral.dark": "#111827"
+}
 ```
 
 ### Material Design Style Color Scale
