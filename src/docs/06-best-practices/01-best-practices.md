@@ -367,5 +367,4 @@ spacing
 ## 3.2.10 Next Steps
 
 - Check [Troubleshooting](./5.1-troubleshooting.md) for issues
-- See [API Reference](./4.1-api-reference.md) for integration
 

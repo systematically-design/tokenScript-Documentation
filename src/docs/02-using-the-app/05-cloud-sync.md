@@ -185,7 +185,6 @@ If available, you can:
 ### Regular Backups
 
 While automatic saving is reliable:
-- **Export tokens** - Save copies of important tokens
 - **Document decisions** - Keep notes on design choices
 - **Version control** - Consider using version control for critical work
 
@@ -221,7 +220,6 @@ Systematically uses your data to:
 You can:
 - **Access your data** - View all your tokens
 - **Delete your data** - Remove your tokens
-- **Export your data** - Download your tokens
 - **Control permissions** - Manage what TokenScript can access
 
 ## Next Steps
@@ -229,8 +227,7 @@ You can:
 Now that you understand cloud sync:
 
 1. **[Getting Started](../01-getting-started/02-quick-start-app.md)** - Learn the basics
-2. **[Workflows](../05-integration/03-workflows.md)** - See real-world examples
-3. **[Troubleshooting](../07-help/01-troubleshooting.md)** - Fix sync issues
+2. **[Troubleshooting](../07-help/01-troubleshooting.md)** - Fix sync issues
 
 ---
 

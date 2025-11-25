@@ -9,7 +9,6 @@ Visualizations are interactive displays that show your tokens in a visual format
 - **See relationships** - Understand how tokens relate to each other
 - **Verify consistency** - Ensure your scales work harmoniously
 - **Make decisions** - Visually evaluate color choices and typography
-- **Share designs** - Show stakeholders how your system works
 
 ## Color Scale Visualizations
 
@@ -200,7 +199,6 @@ Visualizations appear in the **bottom panel** of the Systematically interface, b
 - **Toggle visibility** - Show/hide visualization panel
 - **Switch views** - Different visualization types
 - **Zoom** - Adjust visualization size
-- **Export** - Save visualizations (if available)
 
 ## Tips for Using Visualizations
 
@@ -212,15 +210,7 @@ Visualizations help you verify:
 - Spacing is consistent
 - Values make sense
 
-### Tip 2: Share with Stakeholders
-
-Visualizations are great for:
-- Showing design system progress
-- Getting feedback on color choices
-- Demonstrating typography systems
-- Explaining design decisions
-
-### Tip 3: Compare Variations
+### Tip 2: Compare Variations
 
 Create multiple scales and compare:
 - Different color harmonies
@@ -228,7 +218,7 @@ Create multiple scales and compare:
 - Different spacing increments
 - See which works best visually
 
-### Tip 4: Check Accessibility
+### Tip 3: Check Accessibility
 
 Use visualizations to verify:
 - Color contrast ratios
@@ -297,10 +287,9 @@ Use color harmony visualizations to:
 Now that you understand visualizations:
 
 1. **[Creating Tokens](../03-creating-tokens/README.md)** - Create more scales to visualize
-2. **[Workflows](../05-integration/03-workflows.md)** - See real-world visualization examples
-3. **[Troubleshooting](../07-help/01-troubleshooting.md)** - Fix visualization issues
+2. **[Troubleshooting](../07-help/01-troubleshooting.md)** - Fix visualization issues
 
 ---
 
-**Tip**: Visualizations are one of Systematically's most powerful features! Use them to validate your design decisions, share your work, and ensure your design system is cohesive and well-designed.
+**Tip**: Visualizations are one of Systematically's most powerful features! Use them to validate your design decisions and ensure your design system is cohesive and well-designed.
 

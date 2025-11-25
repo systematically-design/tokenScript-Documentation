@@ -15,13 +15,6 @@ TokenScript DSL is a simple, human-readable language for defining design tokens.
 - Developers integrating design tokens
 - Teams maintaining design systems
 
-### What formats can I export to?
-
-- W3C Design Tokens format
-- Tokens Studio format
-- Simple flat format
-- Raw IR format
-
 ## 5.2.2 Syntax
 
 ### Do I need quotes for strings?
@@ -218,22 +211,21 @@ colors
   black = #111827
 ```
 
-## 5.2.9 Integration
+## 5.2.9 Using Tokens
 
 ### How do I use tokens in my code?
 
-Export tokens using the API, then import them into your application:
+You can copy token values from Systematically and use them in your application:
 
 ```javascript
-// After exporting to JSON
-import tokens from './tokens.json';
-
-const buttonPadding = tokens.spacing.md;
+// Copy values from Systematically
+const buttonPadding = 16; // spacing.md value
+const primaryColor = '#3B82F6'; // colors.primary value
 ```
 
 ### Can I use tokens in CSS?
 
-Yes! Export tokens and use CSS custom properties:
+Yes! Copy token values and use CSS custom properties:
 
 ```css
 :root {

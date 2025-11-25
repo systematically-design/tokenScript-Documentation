@@ -8,7 +8,6 @@ TokenScript DSL is a simple, human-readable language for defining design tokens.
 - Create consistent design scales (spacing, typography, colors)
 - Define relationships between tokens
 - Generate tokens automatically from scales
-- Export to formats like W3C Design Tokens and Tokens Studio
 
 ## Your First Tokens
 
@@ -188,11 +187,7 @@ This creates:
 Once you've defined your tokens, you can:
 
 1. **Use in Systematically** - Open Systematically and paste your DSL code
-2. **Export them** - Use the API to export to W3C Design Tokens format
-3. **Use in code** - Import tokens into your CSS, JavaScript, or design tools
-4. **Share with team** - Version control your token files and collaborate
-
-See the [API Reference](../05-integration/01-api-reference.md) for details on exporting tokens.
+2. **Use in code** - Copy token values into your CSS, JavaScript, or design tools
 
 ## Next Steps
 

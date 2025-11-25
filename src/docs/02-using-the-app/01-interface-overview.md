@@ -74,7 +74,6 @@ Visualizations help you:
 - **See relationships** - Understand how tokens relate
 - **Verify consistency** - Ensure scales work harmoniously
 - **Make decisions** - Visually evaluate choices
-- **Share designs** - Show stakeholders your system
 
 ## Navigation Tips
 

@@ -2,8 +2,6 @@
 title: Systematically Documentation
 ---
 
-# Systematically Documentation
-
 Welcome to the Systematically documentation! This documentation combines guides for both Systematically (the visual editor platform) and the TokenScript DSL (language reference) into a single, progressive learning path.
 
 ## What is Systematically?
@@ -35,13 +33,11 @@ Start with the language and use the app as needed:
 2. **[Quick Start: DSL](01-getting-started/03-quick-start-dsl)** - Write your first tokens
 3. **[Language Reference](04-language-reference/README)** - Complete syntax reference
 4. **[Creating Tokens](03-creating-tokens/README)** - Token creation patterns
-5. **[Integration](05-integration/01-api-reference)** - API and export formats
 
 ### 🚀 Quick Start (Either Path)
 
 - **New to design tokens?** → Start with [App Quick Start](01-getting-started/02-quick-start-app)
 - **Familiar with design tokens?** → Start with [DSL Quick Start](01-getting-started/03-quick-start-dsl)
-- **Need API docs?** → Jump to [API Reference](05-integration/01-api-reference)
 
 ## Documentation Structure
 
@@ -76,15 +72,10 @@ Start with the language and use the app as needed:
 - [References](04-language-reference/07-references) - Advanced referencing
 - [Expressions](04-language-reference/08-expressions) - Mathematical expressions
 
-### 05. Integration
-- [API Reference](05-integration/01-api-reference) - REST API endpoints
-- [Export Formats](05-integration/02-export-formats) - W3C, Tokens Studio, and more
-- [Workflows](05-integration/03-workflows) - Real-world examples and patterns
-
-### 06. Best Practices
+### 05. Best Practices
 - [Best Practices](06-best-practices/01-best-practices) - Guidelines for maintainable token systems
 
-### 07. Help
+### 06. Help
 - [Troubleshooting](07-help/01-troubleshooting) - Common issues and solutions
 - [FAQ](07-help/02-faq) - Frequently asked questions
 

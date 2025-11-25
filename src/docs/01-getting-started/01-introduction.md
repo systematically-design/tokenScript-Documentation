@@ -39,7 +39,6 @@ A simple, human-readable language for defining tokens:
 - **Powerful scales** - Generate sequences automatically
 - **References** - Create relationships between tokens
 - **Mathematical expressions** - Calculate derived values
-- **Multiple export formats** - W3C, Tokens Studio, and more
 
 **Best for**: Developers, version control, programmatic generation
 
@@ -54,8 +53,6 @@ Generate dozens of tokens from a single scale definition. Change one value, upda
 ### Flexibility
 Use the visual editor for quick iteration or write DSL code for version control and automation.
 
-### Integration
-Export to standard formats (W3C Design Tokens, Tokens Studio) that work with your existing tools.
 
 ## Key Features
 
@@ -77,13 +74,6 @@ buttonPadding = $baseSpacing * 1.5  // 12px
 ### Visualizations
 See your scales come to life with interactive visualizations that help you understand relationships and make decisions.
 
-### Multiple Formats
-Export to:
-- W3C Design Tokens format
-- Tokens Studio format
-- Simple flat JSON
-- Raw IR (Intermediate Representation)
-
 ## Getting Started
 
 ### New to Design Tokens?
@@ -99,12 +89,6 @@ Start with the **DSL**:
 1. [Quick Start: DSL](03-quick-start-dsl.md) - Write your first tokens
 2. [Language Reference](../04-language-reference/README.md) - Complete syntax guide
 3. [Creating Tokens](../03-creating-tokens/README.md) - Token creation patterns
-
-### Need API Access?
-
-Jump straight to:
-- [API Reference](../05-integration/01-api-reference.md) - REST API endpoints
-- [Export Formats](../05-integration/02-export-formats.md) - Output formats
 
 ## Example: Your First Design System
 

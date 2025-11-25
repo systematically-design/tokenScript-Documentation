@@ -152,31 +152,9 @@ export function generateNavigation(): NavigationItem[] {
 			]
 		},
 		{
-			title: 'Integration',
-			path: '05-integration',
-			order: 6,
-			children: [
-				{
-					title: 'API Reference',
-					path: '05-integration/01-api-reference',
-					order: 1
-				},
-				{
-					title: 'Export Formats',
-					path: '05-integration/02-export-formats',
-					order: 2
-				},
-				{
-					title: 'Workflows',
-					path: '05-integration/03-workflows',
-					order: 3
-				}
-			]
-		},
-		{
 			title: 'Best Practices',
 			path: '06-best-practices',
-			order: 7,
+			order: 6,
 			children: [
 				{
 					title: 'Best Practices',
@@ -188,7 +166,7 @@ export function generateNavigation(): NavigationItem[] {
 		{
 			title: 'Help',
 			path: '07-help',
-			order: 8,
+			order: 7,
 			children: [
 				{
 					title: 'Troubleshooting',
