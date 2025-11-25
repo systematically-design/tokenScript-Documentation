@@ -1,6 +1,6 @@
-# Introduction to TokenScript
+# Introduction to Systematically
 
-TokenScript is a platform for creating and managing design tokens—the building blocks of your design system. Whether you're a designer who prefers visual tools or a developer who loves code, TokenScript has you covered.
+Systematically is a platform for creating and managing design tokens—the building blocks of your design system. Whether you're a designer who prefers visual tools or a developer who loves code, Systematically has you covered.
 
 ## What Are Design Tokens?
 
@@ -17,11 +17,11 @@ buttonBackground = $primaryColor
 cardPadding = $baseSpacing
 ```
 
-## TokenScript Platform
+## Systematically Platform
 
-TokenScript consists of two main components:
+Systematically consists of two main components:
 
-### 1. TokenScript App (Visual Editor)
+### 1. Systematically (Visual Editor)
 
 A web-based visual editor that makes creating tokens intuitive:
 - **Monaco-powered code editor** - The same editor used in VS Code
@@ -43,7 +43,7 @@ A simple, human-readable language for defining tokens:
 
 **Best for**: Developers, version control, programmatic generation
 
-## Why Use TokenScript?
+## Why Use Systematically?
 
 ### Consistency
 Create systematic design systems with scales that ensure consistency across your entire product.

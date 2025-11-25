@@ -1,6 +1,6 @@
 # Editor Features
 
-The TokenScript editor is powered by Monaco Editor (the same editor used in VS Code) and includes many features to make writing TokenScript easier and more enjoyable.
+The Systematically editor is powered by Monaco Editor (the same editor used in VS Code) and includes many features to make writing TokenScript DSL easier and more enjoyable.
 
 ## Syntax Highlighting
 

@@ -1,6 +1,6 @@
 # Visualizations
 
-TokenScript automatically creates beautiful visualizations of your tokens. These help you see how your design tokens work together and make it easier to understand your design system.
+Systematically automatically creates beautiful visualizations of your tokens. These help you see how your design tokens work together and make it easier to understand your design system.
 
 ## What Are Visualizations?
 
@@ -186,7 +186,7 @@ Visualizations show:
 
 ### Panel Location
 
-Visualizations appear in the **bottom panel** of the TokenScript interface, below the editor and preview panels.
+Visualizations appear in the **bottom panel** of the Systematically interface, below the editor and preview panels.
 
 ### Panel Behavior
 
@@ -302,5 +302,5 @@ Now that you understand visualizations:
 
 ---
 
-**Tip**: Visualizations are one of TokenScript's most powerful features! Use them to validate your design decisions, share your work, and ensure your design system is cohesive and well-designed.
+**Tip**: Visualizations are one of Systematically's most powerful features! Use them to validate your design decisions, share your work, and ensure your design system is cohesive and well-designed.
 

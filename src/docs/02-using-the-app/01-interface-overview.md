@@ -1,10 +1,10 @@
 # Interface Overview
 
-The TokenScript interface is designed to make creating and managing design tokens intuitive and efficient. This guide will help you understand all the key areas of the interface.
+The Systematically interface is designed to make creating and managing design tokens intuitive and efficient. This guide will help you understand all the key areas of the interface.
 
 ## Main Layout
 
-The TokenScript interface is divided into several key areas:
+The Systematically interface is divided into several key areas:
 
 ### Top Navigation Bar
 
@@ -21,7 +21,7 @@ The center of the screen contains the main editor, split into two panels:
 
 #### Left Panel: Code Editor
 
-This is where you write TokenScript code. It features:
+This is where you write TokenScript DSL code. It features:
 - **Syntax highlighting** - Colors help you see different parts of your code
 - **Autocomplete** - Suggestions appear as you type
 - **Line numbers** - Help you navigate longer files

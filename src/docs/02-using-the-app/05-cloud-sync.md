@@ -1,10 +1,10 @@
 # Cloud Sync & Saving
 
-TokenScript automatically saves your work to the cloud, so you can access your tokens from any device and never lose your work.
+Systematically automatically saves your work to the cloud, so you can access your tokens from any device and never lose your work.
 
 ## How Cloud Sync Works
 
-TokenScript uses cloud storage to save your tokens securely. Your work is:
+Systematically uses cloud storage to save your tokens securely. Your work is:
 - **Automatically saved** - No need to remember to save
 - **Stored securely** - Protected with your Google account
 - **Synced across devices** - Access from anywhere
@@ -13,7 +13,7 @@ TokenScript uses cloud storage to save your tokens securely. Your work is:
 ### What Gets Saved
 
 - **All pages** - Every page you create
-- **All tokens** - All your TokenScript code
+- **All tokens** - All your TokenScript DSL code
 - **Page organization** - Page names and order
 - **Settings** - Your preferences (if applicable)
 
@@ -25,12 +25,12 @@ TokenScript uses cloud storage to save your tokens securely. Your work is:
 
 ## Automatic Saving
 
-TokenScript automatically saves your work as you type.
+Systematically automatically saves your work as you type.
 
 ### How It Works
 
 1. **You type** - Make changes in the editor
-2. **Debounce delay** - TokenScript waits 1 second after you stop typing
+2. **Debounce delay** - Systematically waits 1 second after you stop typing
 3. **Auto-save** - Your work is saved automatically
 4. **Confirmation** - You may see a save indicator
 
@@ -64,7 +64,7 @@ If you want to ensure your work is saved:
 ### Loading Your Work
 
 When you sign in:
-1. TokenScript automatically loads your saved work
+1. Systematically automatically loads your saved work
 2. All pages appear as you left them
 3. All tokens are restored
 
@@ -76,7 +76,7 @@ When you sign in:
 
 ## Syncing Across Devices
 
-TokenScript syncs your work across all devices where you're signed in.
+Systematically syncs your work across all devices where you're signed in.
 
 ### How to Sync
 
@@ -119,7 +119,7 @@ TokenScript syncs your work across all devices where you're signed in.
 
 If available, you can:
 - **View account info** - See your account details
-- **Manage permissions** - Control what TokenScript can access
+- **Manage permissions** - Control what Systematically can access
 - **Delete account** - Remove your account (if available)
 
 **Warning**: Deleting your account may delete all saved work. Be careful!
@@ -211,7 +211,7 @@ While automatic saving is reliable:
 
 ### Data Usage
 
-TokenScript uses your data to:
+Systematically uses your data to:
 - **Save your work** - Store your tokens
 - **Sync across devices** - Keep your work available
 - **Improve service** - Anonymous usage data (if applicable)
@@ -234,5 +234,5 @@ Now that you understand cloud sync:
 
 ---
 
-**Tip**: Cloud sync makes TokenScript powerful! You can work on your design system from anywhere, and your work is always safe. Just remember to sign in with the same Google account on all devices.
+**Tip**: Cloud sync makes Systematically powerful! You can work on your design system from anywhere, and your work is always safe. Just remember to sign in with the same Google account on all devices.
 

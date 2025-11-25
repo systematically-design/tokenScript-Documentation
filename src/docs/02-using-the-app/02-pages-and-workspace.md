@@ -1,12 +1,12 @@
 # Pages & Workspace
 
-TokenScript uses a multi-page system to organize your tokens into sets. This guide will teach you how to organize your design tokens across multiple token sets.
+Systematically uses a multi-page system to organize your tokens into sets. This guide will teach you how to organize your design tokens across multiple token sets.
 
 ## Understanding Pages
 
 Think of pages as token sets or groups. Each page:
 - Has its own name (like "Colors", "Spacing", "Typography")
-- Contains its own TokenScript code
+- Contains its own TokenScript DSL code
 - Can reference tokens from other pages
 - Is saved independently
 
@@ -98,7 +98,7 @@ Duplicating creates an exact copy of a page, which is useful for:
 3. A confirmation dialog appears
 4. Confirm the deletion
 
-**Note**: You cannot delete the last remaining page. TokenScript always keeps at least one page.
+**Note**: You cannot delete the last remaining page. Systematically always keeps at least one page.
 
 ## Organizing Your Tokens
 

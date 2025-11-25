@@ -1,6 +1,6 @@
 # Troubleshooting
 
-This guide helps you solve common issues and errors in TokenScript. Whether you're using the visual editor or writing DSL code, check here first!
+This guide helps you solve common issues and errors in Systematically. Whether you're using the visual editor or writing TokenScript DSL code, check here first!
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ This guide helps you solve common issues and errors in TokenScript. Whether you'
 
 ## Syntax Errors
 
-Syntax errors occur when your TokenScript code doesn't follow the correct syntax.
+Syntax errors occur when your TokenScript DSL code doesn't follow the correct syntax.
 
 ### Missing Equals Sign
 
@@ -185,7 +185,7 @@ allSpacing = $...spacing  // Correct name
 
 ## Compilation Errors
 
-Compilation errors occur when TokenScript can't compile your tokens.
+Compilation errors occur when Systematically can't compile your tokens.
 
 ### Invalid Scale Parameters
 

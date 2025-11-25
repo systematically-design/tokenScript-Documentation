@@ -187,7 +187,7 @@ This creates:
 
 Once you've defined your tokens, you can:
 
-1. **Use in the App** - Open the TokenScript app and paste your DSL code
+1. **Use in Systematically** - Open Systematically and paste your DSL code
 2. **Export them** - Use the API to export to W3C Design Tokens format
 3. **Use in code** - Import tokens into your CSS, JavaScript, or design tools
 4. **Share with team** - Version control your token files and collaborate

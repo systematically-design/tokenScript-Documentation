@@ -1,22 +1,22 @@
-# Quick Start: TokenScript App
+# Quick Start: Systematically
 
-Welcome! This guide will walk you through your first steps with the TokenScript visual editor, from signing in to creating your first design token.
+Welcome! This guide will walk you through your first steps with Systematically, from signing in to creating your first design token.
 
 ## What You'll Learn
 
 By the end of this guide, you'll know how to:
-- Sign in to TokenScript
+- Sign in to Systematically
 - Navigate the interface
 - Create a simple token
 - See your token in the preview panel
 
 ## Signing In
 
-TokenScript uses Google authentication to keep your work secure and synced.
+Systematically uses Google authentication to keep your work secure and synced.
 
-### Step 1: Access TokenScript
+### Step 1: Access Systematically
 
-Open TokenScript in your web browser. You'll see the login page.
+Open Systematically in your web browser. You'll see the login page.
 
 ### Step 2: Sign In with Google
 
@@ -32,7 +32,7 @@ After signing in, you'll be automatically redirected to the main editor interfac
 
 ## Understanding the Interface
 
-The TokenScript interface is divided into several key areas:
+The Systematically interface is divided into several key areas:
 
 ### Top Navigation Bar
 
@@ -80,7 +80,7 @@ This creates a token named `primaryColor` with a blue color value.
 
 ### Step 2: See It Compile
 
-As you type, TokenScript automatically compiles your code. After a moment, you should see:
+As you type, Systematically automatically compiles your code. After a moment, you should see:
 
 1. **In the preview panel**: A new row appears showing:
    - Name: `primaryColor`
@@ -111,7 +111,7 @@ This creates a token that uses the value from `baseSpacing`. If you change `base
 
 ## Understanding Your First Page
 
-When you first open TokenScript, you'll see a page called something like "Page 1" or "Untitled". This is your first workspace page.
+When you first open Systematically, you'll see a page called something like "Page 1" or "Untitled". This is your first workspace page.
 
 **Think of pages as token sets** - you can organize different types of tokens into different sets:
 - One page for colors
@@ -166,9 +166,9 @@ Congratulations! You've created your first tokens. Here's what to explore next:
 
 **Use Comments**: Document your tokens as you create them. Future you will thank you!
 
-**Experiment**: Don't worry about making mistakes. TokenScript will show you errors, and you can always fix them.
+**Experiment**: Don't worry about making mistakes. Systematically will show you errors, and you can always fix them.
 
-**Save Often**: Your work is automatically saved to the cloud, but it's good practice to check that cloud sync is working.
+**Save Often**: Your work is automatically saved to the cloud via Systematically, but it's good practice to check that cloud sync is working.
 
 **Explore Visualizations**: When you create scales, hover over them to see beautiful visualizations appear.
 
