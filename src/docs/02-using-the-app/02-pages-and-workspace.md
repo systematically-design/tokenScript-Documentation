@@ -285,9 +285,8 @@ Each page name must be unique. If you see this error:
 
 Now that you understand pages:
 
-1. **[Editor Features](03-editor-features.md)** - Master the editor's powerful features
-2. **[Creating Tokens](../03-creating-tokens/README.md)** - Start creating different types of tokens
-3. **[Workflows](../05-integration/03-workflows.md)** - See real-world organization examples
+1. **Editor Features** - Master the editor's powerful features
+2. **Creating Tokens** - Start creating different types of tokens
 
 ---
 

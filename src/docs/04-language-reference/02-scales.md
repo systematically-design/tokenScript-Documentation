@@ -321,6 +321,6 @@ zIndex
 
 ## 2.2.9 Next Steps
 
-- Learn about [Working with Typography](./2.4-typography.md)
-- Check [Best Practices](./3.2-best-practices.md) for guidelines
+- Learn about Working with Typography
+- Check Best Practices for guidelines
 

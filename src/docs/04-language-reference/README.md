@@ -4,14 +4,14 @@ Complete reference guide to the TokenScript DSL syntax and features. This sectio
 
 ## Guides in This Section
 
-1. **[Syntax Reference](01-syntax-reference.md)** - Complete DSL syntax guide
-2. **[Scales](02-scales.md)** - Deep dive on creating scales
-3. **[Colors](03-colors.md)** - Color formats and systems
-4. **[Typography](04-typography.md)** - Typography tokens
-5. **[Spacing](05-spacing.md)** - Spacing tokens
-6. **[Composite Tokens](06-composite-tokens.md)** - Grouped properties
-7. **[References](07-references.md)** - Advanced referencing (coming soon)
-8. **[Expressions](08-expressions.md)** - Mathematical expressions (coming soon)
+1. **Syntax Reference** - Complete DSL syntax guide
+2. **Scales** - Deep dive on creating scales
+3. **Colors** - Color formats and systems
+4. **Typography** - Typography tokens
+5. **Spacing** - Spacing tokens
+6. **Composite Tokens** - Grouped properties
+7. **References** - Advanced referencing (coming soon)
+8. **Expressions** - Mathematical expressions (coming soon)
 
 ## Quick Reference
 
@@ -44,11 +44,11 @@ This reference is designed for:
 - **Advanced users** who want to understand the language deeply
 - **Tool builders** creating TokenScript integrations
 
-For tutorials and step-by-step guides, see [Creating Tokens](../03-creating-tokens/README.md).
+For tutorials and step-by-step guides, see Creating Tokens in the navigation.
 
 ## Next Steps
 
-- Start with [Syntax Reference](01-syntax-reference.md) for complete syntax
-- Explore [Scales](02-scales.md) for scale generation
-- Check [Best Practices](../06-best-practices/01-best-practices.md) for guidelines
+- Start with Syntax Reference for complete syntax
+- Explore Scales for scale generation
+- Check Best Practices for guidelines
 

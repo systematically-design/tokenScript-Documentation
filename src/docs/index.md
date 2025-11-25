@@ -19,65 +19,65 @@ Choose the path that fits your needs:
 
 Start with the visual editor and learn the DSL as you go:
 
-1. **[Introduction](01-getting-started/01-introduction)** - What is Systematically?
-2. **[Quick Start: App](01-getting-started/02-quick-start-app)** - Get started with the visual editor
-3. **[Using the App](02-using-the-app/01-interface-overview)** - Master the interface
-4. **[Creating Tokens](03-creating-tokens/README)** - Learn to create tokens visually
-5. **[Language Reference](04-language-reference/README)** - Deep dive into DSL syntax (when ready)
+1. **Introduction** - What is Systematically?
+2. **Quick Start: App** - Get started with the visual editor
+3. **Using the App** - Master the interface
+4. **Creating Tokens** - Learn to create tokens visually
+5. **Language Reference** - Deep dive into DSL syntax (when ready)
 
 ### 💻 For Developers (DSL-First Path)
 
 Start with the language and use the app as needed:
 
-1. **[Introduction](01-getting-started/01-introduction)** - What is Systematically?
-2. **[Quick Start: DSL](01-getting-started/03-quick-start-dsl)** - Write your first tokens
-3. **[Language Reference](04-language-reference/README)** - Complete syntax reference
-4. **[Creating Tokens](03-creating-tokens/README)** - Token creation patterns
+1. **Introduction** - What is Systematically?
+2. **Quick Start: DSL** - Write your first tokens
+3. **Language Reference** - Complete syntax reference
+4. **Creating Tokens** - Token creation patterns
 
 ### 🚀 Quick Start (Either Path)
 
-- **New to design tokens?** → Start with [App Quick Start](01-getting-started/02-quick-start-app)
-- **Familiar with design tokens?** → Start with [DSL Quick Start](01-getting-started/03-quick-start-dsl)
+- **New to design tokens?** → Start with App Quick Start
+- **Familiar with design tokens?** → Start with DSL Quick Start
 
 ## Documentation Structure
 
 ### 01. Getting Started
-- [Introduction](01-getting-started/01-introduction) - Overview of Systematically
-- [Quick Start: App](01-getting-started/02-quick-start-app) - Visual editor introduction
-- [Quick Start: DSL](01-getting-started/03-quick-start-dsl) - Language introduction
+- Introduction - Overview of Systematically
+- Quick Start: App - Visual editor introduction
+- Quick Start: DSL - Language introduction
 
 ### 02. Using the App
-- [Interface Overview](02-using-the-app/01-interface-overview) - Understanding the UI
-- [Pages & Workspace](02-using-the-app/02-pages-and-workspace) - Organizing your tokens
-- [Editor Features](02-using-the-app/03-editor-features) - Autocomplete, syntax highlighting, shortcuts
-- [Visualizations](02-using-the-app/04-visualizations) - Interactive token visualizations
-- [Cloud Sync](02-using-the-app/05-cloud-sync) - Saving and syncing your work
+- Interface Overview - Understanding the UI
+- Pages & Workspace - Organizing your tokens
+- Editor Features - Autocomplete, syntax highlighting, shortcuts
+- Visualizations - Interactive token visualizations
+- Cloud Sync - Saving and syncing your work
 
 ### 03. Creating Tokens
-- [Simple Tokens](03-creating-tokens/01-simple-tokens) - Basic colors, spacing, typography
-- [Number Scales](03-creating-tokens/02-number-scales) - Linear and modular scales
-- [Color Scales](03-creating-tokens/03-color-scales) - Color palettes and ramps
-- [Color Harmonies](03-creating-tokens/04-color-harmonies) - Harmonious color relationships
-- [Typography Scales](03-creating-tokens/05-typography-scales) - Typography systems
-- [Spacing Systems](03-creating-tokens/06-spacing-systems) - Spacing scales and layouts
-- [Advanced Tokens](03-creating-tokens/07-advanced-tokens) - Matrices, streams, forEach
+- Simple Tokens - Basic colors, spacing, typography
+- Number Scales - Linear and modular scales
+- Color Scales - Color palettes and ramps
+- Color Harmonies - Harmonious color relationships
+- Typography Scales - Typography systems
+- Spacing Systems - Spacing scales and layouts
+- Advanced Tokens - Matrices, streams, forEach
 
 ### 04. Language Reference
-- [Syntax Reference](04-language-reference/01-syntax-reference) - Complete DSL syntax
-- [Scales](04-language-reference/02-scales) - Deep dive on scales
-- [Colors](04-language-reference/03-colors) - Color formats and systems
-- [Typography](04-language-reference/04-typography) - Typography tokens
-- [Spacing](04-language-reference/05-spacing) - Spacing tokens
-- [Composite Tokens](04-language-reference/06-composite-tokens) - Grouped properties
-- [References](04-language-reference/07-references) - Advanced referencing
-- [Expressions](04-language-reference/08-expressions) - Mathematical expressions
+- Syntax Reference - Complete DSL syntax
+- Scales - Deep dive on scales
+- Colors - Color formats and systems
+- Typography - Typography tokens
+- Spacing - Spacing tokens
+- Composite Tokens - Grouped properties
+- References - Advanced referencing
+- Expressions - Mathematical expressions
 
 ### 05. Best Practices
-- [Best Practices](06-best-practices/01-best-practices) - Guidelines for maintainable token systems
+- Best Practices - Guidelines for maintainable token systems
 
 ### 06. Help
-- [Troubleshooting](07-help/01-troubleshooting) - Common issues and solutions
-- [FAQ](07-help/02-faq) - Frequently asked questions
+- Troubleshooting - Common issues and solutions
+- FAQ - Frequently asked questions
 
 ## Key Concepts
 
@@ -104,5 +104,5 @@ Throughout this documentation, you'll find:
 
 ---
 
-**Ready to start?** Choose your path above or jump to [Introduction](01-getting-started/01-introduction)!
+**Ready to start?** Choose your path above or use the navigation to get started!
 

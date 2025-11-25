@@ -182,19 +182,12 @@ This creates:
 - A modular typography scale from 16px to 31.25px
 - Color tokens for primary, secondary, and neutral colors
 
-## Using Your Tokens
-
-Once you've defined your tokens, you can:
-
-1. **Use in Systematically** - Open Systematically and paste your DSL code
-2. **Use in code** - Copy token values into your CSS, JavaScript, or design tools
-
 ## Next Steps
 
-- **[Syntax Reference](../04-language-reference/01-syntax-reference.md)** - Complete guide to TokenScript syntax
-- **[Creating Tokens](../03-creating-tokens/README.md)** - Learn to create different types of tokens
-- **[Scales](../04-language-reference/02-scales.md)** - Deep dive on creating scales
-- **[Best Practices](../06-best-practices/01-best-practices.md)** - Guidelines for maintainable token systems
+- **Syntax Reference** - Complete guide to TokenScript syntax
+- **Creating Tokens** - Learn to create different types of tokens
+- **Scales** - Deep dive on creating scales
+- **Best Practices** - Guidelines for maintainable token systems
 
 ## Key Concepts
 
@@ -215,11 +208,11 @@ Use `//` for comments
 
 ## Getting Help
 
-- Check the [Troubleshooting Guide](../07-help/01-troubleshooting.md) for common issues
-- See the [FAQ](../07-help/02-faq.md) for answers to common questions
-- Review the [Syntax Reference](../04-language-reference/01-syntax-reference.md) for complete syntax details
+- Check the Troubleshooting Guide for common issues
+- See the FAQ for answers to common questions
+- Review the Syntax Reference for complete syntax details
 
 ---
 
-**Ready to learn more?** Continue to the [Syntax Reference](../04-language-reference/01-syntax-reference.md) or start [Creating Tokens](../03-creating-tokens/README.md)!
+**Ready to learn more?** Use the navigation to explore the Syntax Reference or start Creating Tokens!
 

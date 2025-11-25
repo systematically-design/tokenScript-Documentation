@@ -105,11 +105,11 @@ sectionGap = $baseSpacing * 4
 
 ## Troubleshooting
 
-See [Troubleshooting](../07-help/01-troubleshooting.md) for expression errors.
+See Troubleshooting for expression errors.
 
 ## Next Steps
 
-- Learn about [References](07-references.md)
-- See [Scales](02-scales.md) for scale expressions
-- Check [Best Practices](../06-best-practices/01-best-practices.md)
+- Learn about References
+- See Scales for scale expressions
+- Check Best Practices
 

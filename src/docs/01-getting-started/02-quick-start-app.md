@@ -62,7 +62,7 @@ This shows your compiled tokens in a table format:
 
 ### Bottom Panel: Visualizations
 
-When you create scales (like color scales or typography scales), visualizations appear here automatically. You'll learn more about these in the [Visualizations Guide](../02-using-the-app/04-visualizations.md).
+When you create scales (like color scales or typography scales), visualizations appear here automatically. You'll learn more about these in the Visualizations section.
 
 ## Creating Your First Token
 
@@ -119,7 +119,7 @@ When you first open Systematically, you'll see a page called something like "Pag
 - One page for typography
 - And so on
 
-You'll learn more about managing pages in the [Pages & Workspace Guide](../02-using-the-app/02-pages-and-workspace.md).
+You'll learn more about managing pages in the Pages & Workspace section.
 
 ## Common First Steps
 
@@ -155,10 +155,10 @@ largeSpacing = 32px
 
 Congratulations! You've created your first tokens. Here's what to explore next:
 
-1. **[Pages & Workspace](../02-using-the-app/02-pages-and-workspace.md)** - Organize your tokens across multiple pages
-2. **[Editor Features](../02-using-the-app/03-editor-features.md)** - Master the editor's powerful features
-3. **[Creating Tokens](../03-creating-tokens/01-simple-tokens.md)** - Learn to create more complex tokens
-4. **[Language Reference](../04-language-reference/01-syntax-reference.md)** - Deep dive into TokenScript syntax
+1. **Pages & Workspace** - Organize your tokens across multiple pages
+2. **Editor Features** - Master the editor's powerful features
+3. **Creating Tokens** - Learn to create more complex tokens
+4. **Language Reference** - Deep dive into TokenScript syntax
 
 ## Tips for Beginners
 
@@ -176,11 +176,11 @@ Congratulations! You've created your first tokens. Here's what to explore next:
 
 If you run into issues:
 
-- Check the [Troubleshooting Guide](../07-help/01-troubleshooting.md)
+- Check the Troubleshooting Guide
 - Look for error messages in the editor (red squiggles)
-- Review the [Syntax Reference](../04-language-reference/01-syntax-reference.md) for syntax help
+- Review the Syntax Reference for syntax help
 
 ---
 
-**Ready to learn more?** Continue to [Pages & Workspace](../02-using-the-app/02-pages-and-workspace.md) or start [Creating Tokens](../03-creating-tokens/01-simple-tokens.md)!
+**Ready to learn more?** Use the navigation to explore Pages & Workspace or start Creating Tokens!
 

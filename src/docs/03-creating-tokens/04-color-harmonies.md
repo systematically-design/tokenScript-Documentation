@@ -402,8 +402,8 @@ theme
 
 Now that you understand color harmonies:
 
-1. **[Typography Scales](5.5-typography-scales.md)** - Build typography systems
-2. **[Advanced Tokens](5.6-advanced-tokens.md)** - Learn complex structures
+1. **Typography Scales** - Build typography systems
+2. **Advanced Tokens** - Learn complex structures
 3. **[Visualizations](../6.0-visualizations.md)** - See your harmonies visualized
 
 ---

@@ -276,7 +276,7 @@ Check:
 
 ## 5.2.11 Next Steps
 
-- Check [Getting Started](./1-getting-started.md) for basics
-- Review [Syntax Reference](./2.1-syntax-reference.md) for details
-- See [Troubleshooting](./5.1-troubleshooting.md) for help
+- Check Getting Started for basics
+- Review Syntax Reference for details
+- See Troubleshooting for help
 

@@ -320,9 +320,9 @@ The editor supports:
 
 Now that you know the editor features:
 
-1. **[Creating Tokens](../03-creating-tokens/01-simple-tokens.md)** - Start creating tokens with confidence
-2. **[Language Reference](../04-language-reference/01-syntax-reference.md)** - Deep dive into the language
-3. **[Visualizations](04-visualizations.md)** - See your tokens visualized
+1. **Creating Tokens** - Start creating tokens with confidence
+2. **Language Reference** - Deep dive into the language
+3. **Visualizations** - See your tokens visualized
 
 ---
 

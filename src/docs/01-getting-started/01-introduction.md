@@ -79,16 +79,16 @@ See your scales come to life with interactive visualizations that help you under
 ### New to Design Tokens?
 
 Start with the **visual editor**:
-1. [Quick Start: App](02-quick-start-app.md) - Learn the interface
-2. [Creating Tokens](../03-creating-tokens/README.md) - Start creating tokens visually
-3. [Language Reference](../04-language-reference/README.md) - Learn DSL syntax when ready
+1. Quick Start: App - Learn the interface
+2. Creating Tokens - Start creating tokens visually
+3. Language Reference - Learn DSL syntax when ready
 
 ### Familiar with Design Tokens?
 
 Start with the **DSL**:
-1. [Quick Start: DSL](03-quick-start-dsl.md) - Write your first tokens
-2. [Language Reference](../04-language-reference/README.md) - Complete syntax guide
-3. [Creating Tokens](../03-creating-tokens/README.md) - Token creation patterns
+1. Quick Start: DSL - Write your first tokens
+2. Language Reference - Complete syntax guide
+3. Creating Tokens - Token creation patterns
 
 ## Example: Your First Design System
 
@@ -129,9 +129,9 @@ This creates:
 
 ## Next Steps
 
-- **Visual learners**: [Quick Start: App](02-quick-start-app.md)
-- **Code-first**: [Quick Start: DSL](03-quick-start-dsl.md)
-- **Explore features**: [Creating Tokens](../03-creating-tokens/README.md)
+- **Visual learners**: Quick Start: App
+- **Code-first**: Quick Start: DSL
+- **Explore features**: Creating Tokens
 
 ---
 

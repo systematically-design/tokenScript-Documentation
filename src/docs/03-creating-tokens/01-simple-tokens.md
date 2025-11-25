@@ -436,9 +436,9 @@ buttonFontWeight = "600"
 
 Now that you can create simple tokens:
 
-1. **[Number Scales](5.2-number-scales.md)** - Create systematic spacing scales
-2. **[Color Scales](5.3-color-scales.md)** - Build color palettes
-3. **[Typography Scales](5.5-typography-scales.md)** - Create typography systems
+1. **Number Scales** - Create systematic spacing scales
+2. **Color Scales** - Build color palettes
+3. **Typography Scales** - Create typography systems
 
 ---
 

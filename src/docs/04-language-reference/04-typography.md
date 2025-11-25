@@ -342,6 +342,6 @@ fontWeight
 
 ## 2.4.10 Next Steps
 
-- Learn about [Working with Scales](./2.2-scales.md)
-- Check [Best Practices](./3.2-best-practices.md) for guidelines
+- Learn about Working with Scales
+- Check Best Practices for guidelines
 

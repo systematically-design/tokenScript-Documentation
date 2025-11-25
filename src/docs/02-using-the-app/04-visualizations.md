@@ -286,8 +286,8 @@ Use color harmony visualizations to:
 
 Now that you understand visualizations:
 
-1. **[Creating Tokens](../03-creating-tokens/README.md)** - Create more scales to visualize
-2. **[Troubleshooting](../07-help/01-troubleshooting.md)** - Fix visualization issues
+1. **Creating Tokens** - Create more scales to visualize
+2. **Troubleshooting** - Fix visualization issues
 
 ---
 

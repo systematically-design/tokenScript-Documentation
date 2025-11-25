@@ -112,10 +112,10 @@ button
 
 ## Troubleshooting
 
-See [Troubleshooting](../07-help/01-troubleshooting.md) for common reference errors.
+See Troubleshooting for common reference errors.
 
 ## Next Steps
 
-- Learn about [Expressions](08-expressions.md)
-- See [Best Practices](../06-best-practices/01-best-practices.md)
+- Learn about Expressions
+- See Best Practices
 

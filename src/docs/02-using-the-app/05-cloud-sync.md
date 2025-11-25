@@ -226,8 +226,8 @@ You can:
 
 Now that you understand cloud sync:
 
-1. **[Getting Started](../01-getting-started/02-quick-start-app.md)** - Learn the basics
-2. **[Troubleshooting](../07-help/01-troubleshooting.md)** - Fix sync issues
+1. **Getting Started** - Learn the basics
+2. **Troubleshooting** - Fix sync issues
 
 ---
 

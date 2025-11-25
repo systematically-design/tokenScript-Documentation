@@ -305,6 +305,6 @@ colors
 
 ## 2.3.11 Next Steps
 
-- Learn about [Working with Typography](./2.4-typography.md)
-- Check [Best Practices](./3.2-best-practices.md) for guidelines
+- Learn about Working with Typography
+- Check Best Practices for guidelines
 

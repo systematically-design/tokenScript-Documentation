@@ -509,8 +509,8 @@ steps = "xs, sm, md"
 If you can't solve your issue:
 
 1. **Check Documentation**: Review relevant guides
-   - [Syntax Reference](../04-language-reference/01-syntax-reference.md)
-   - [Creating Tokens](../03-creating-tokens/README.md)
+   - Syntax Reference
+   - Creating Tokens
 2. **Search Error Messages**: Copy error text and search
 3. **Simplify**: Try creating a simple token to isolate issue
 4. **Contact Support**: Reach out if issue persists
@@ -547,9 +547,9 @@ When something doesn't work:
 
 If you've resolved your issue:
 
-1. **[Getting Started](../01-getting-started/01-introduction.md)** - Review basics
-2. **[Syntax Reference](../04-language-reference/01-syntax-reference.md)** - Check syntax rules
-3. **[Creating Tokens](../03-creating-tokens/README.md)** - Learn token types
+1. **Getting Started** - Review basics
+2. **Syntax Reference** - Check syntax rules
+3. **Creating Tokens** - Learn token types
 
 ---
 
