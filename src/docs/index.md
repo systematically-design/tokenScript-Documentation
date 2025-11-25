@@ -1,5 +1,5 @@
 ---
-title: Systematically Documentation
+title: Welcome
 ---
 
 Welcome to the Systematically documentation! Systematically is an app powered by TokenScript DSL where you write DSL code to generate design tokens.
