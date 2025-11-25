@@ -1,18 +1,20 @@
 <script>
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 	
 	export let navigation = [];
 	
 	$: currentPath = $page.url.pathname;
 	
 	function isActive(path) {
-		if (path === '' && currentPath === '/') return true;
-		if (path && currentPath.startsWith('/' + path)) return true;
+		const fullPath = base + (path === '' ? '/' : '/' + path);
+		if (path === '' && currentPath === base + '/') return true;
+		if (path && currentPath.startsWith(fullPath)) return true;
 		return false;
 	}
 	
 	function formatPath(path) {
-		return path === '' ? '/' : '/' + path;
+		return base + (path === '' ? '/' : '/' + path);
 	}
 </script>
 

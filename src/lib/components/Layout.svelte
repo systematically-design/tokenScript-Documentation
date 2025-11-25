@@ -3,6 +3,7 @@
 	import Sidebar from './Sidebar.svelte';
 	import TableOfContents from './TableOfContents.svelte';
 	import { extractTableOfContents } from '$lib/utils/toc.js';
+	import { base } from '$app/paths';
 	import type { NavigationItem, TOCHeading } from '$lib/types';
 
 	export const title = 'DocsSite';
@@ -56,7 +57,7 @@
 <div class="layout">
 	<header class="header">
 		<div class="header-content">
-			<a href="/" class="site-title">DocsSitez</a>
+			<a href="{base}/" class="site-title">DocsSitez</a>
 		</div>
 	</header>
 	
