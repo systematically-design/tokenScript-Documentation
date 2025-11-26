@@ -165,7 +165,7 @@ Create harmonious color relationships:
 ```
 brandPalette
     /colorHarmony : complementary
-        base = 200  // Your brand hue
+        hue = 200  // Your brand hue
         steps = [primary, accent]
         lightness = 70
         chroma = 0.25
@@ -341,9 +341,9 @@ Create breakpoint tokens:
 
 ```
 // Breakpoints
-breakpointMobile = 0px
-breakpointTablet = 768px
-breakpointDesktop = 1024px
+breakpointMobile = 0
+breakpointTablet = 768
+breakpointDesktop = 1024
 ```
 
 ### Step 2: Create Mobile Typography
@@ -451,8 +451,8 @@ For components with sizes:
 buttonSizes
     /matrix
         [small, medium, large] as size
-            padding = [8px 16px, 12px 24px, 16px 32px]
-            fontSize = [14px, 16px, 18px]
+            padding = [8 16, 12 24, 16 32]
+            fontSize = [14, 16, 18]
 ```
 
 ## Best Practices for Workflows

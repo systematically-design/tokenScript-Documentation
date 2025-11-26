@@ -229,7 +229,7 @@ Yes! Copy token values and use CSS custom properties:
 
 ```css
 :root {
-  --spacing-md: 16px;
+  --spacing-md: 16;
   --color-primary: #3B82F6;
 }
 ```

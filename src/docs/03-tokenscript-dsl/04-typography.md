@@ -168,9 +168,9 @@ lineHeight
 
 ```tokenscript
 letterSpacing
-  tight = -0.5px
-  normal = 0px
-  wide = 1px
+  tight = -0.5
+  normal = 0
+  wide = 1
 ```
 
 ### Typography Scales
@@ -254,9 +254,9 @@ fontWeightNormal = "400"
 fontWeightBold = "700"
 
 // Font Sizes
-fontSizeSmall = 12px
-fontSizeBase = 16px
-fontSizeLarge = 24px
+fontSizeSmall = 12
+fontSizeBase = 16
+fontSizeLarge = 24
 
 // Line Heights
 lineHeightNormal = 1.5
@@ -361,9 +361,9 @@ fontWeight
 
 // Font Sizes
 fontSize
-  small = 12px
-  base = 16px
-  large = 24px
+  small = 12
+  base = 16
+  large = 24
 
 // Line Heights
 lineHeight

@@ -451,9 +451,9 @@ steps = ["a", "b", "c", "d", "e"]
 ### Match Your Base Unit
 
 Use a base that makes sense for your system:
-- **8px base**: Common for spacing (divisible by 8)
-- **4px base**: Tighter spacing system
-- **16px base**: Larger spacing system
+- **8 base**: Common for spacing (divisible by 8)
+- **4 base**: Tighter spacing system
+- **16 base**: Larger spacing system
 
 ### Reference Base Values
 
@@ -476,8 +476,8 @@ spacing
 Add comments explaining your scale:
 
 ```tokenscript
-// Spacing scale - 8px base with 4px increments
-// Provides consistent spacing from 8px to 32px
+// Spacing scale - 8 base with 4 increments
+// Provides consistent spacing from 8 to 32
 spacing
   /numberScale : linear
     base = 8

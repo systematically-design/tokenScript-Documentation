@@ -240,7 +240,7 @@ Use **Simple** or **W3C** format:
 
 ```css
 :root {
-  --spacing-md: 16px;
+  --spacing-md: 16;
   --color-primary: #3B82F6;
 }
 ```

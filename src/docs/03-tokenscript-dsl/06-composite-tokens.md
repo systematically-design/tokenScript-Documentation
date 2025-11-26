@@ -67,7 +67,7 @@ heading:typography
   lineHeight = 1.5
   fontWeight = 700
   fontFamily = "Inter, sans-serif"
-  letterSpacing = -0.025em
+  letterSpacing = -0.025
 
 body:typography
   fontSize = 16
@@ -86,7 +86,7 @@ body:typography
       "lineHeight": 1.5,
       "fontWeight": 700,
       "fontFamily": "Inter, sans-serif",
-      "letterSpacing": "-0.025em"
+      "letterSpacing": -0.025
     }
   },
   "body": {
@@ -219,8 +219,8 @@ buttonSizes
   /matrix
     [small, medium, large] as size
       [primary, secondary] as variant
-        padding = [12px 16px, 16px 24px, 20px 32px]
-        fontSize = [14px, 16px, 18px]
+        padding = [12 16, 16 24, 20 32]
+        fontSize = [14, 16, 18]
 ```
 
 Creates combinations:
@@ -343,8 +343,8 @@ buttonSizes
   /matrix
     [small, medium, large] as size
       [primary, secondary] as variant
-        padding = [12px 16px, 16px 24px, 20px 32px]
-        fontSize = [14px, 16px, 18px]
+        padding = [12 16, 16 24, 20 32]
+        fontSize = [14, 16, 18]
 ```
 
 ### Document Complex Structures

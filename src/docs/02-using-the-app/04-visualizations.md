@@ -62,7 +62,7 @@ When you create a color harmony, a visualization shows:
 ```tokenscript
 palette
     /colorHarmony : complementary
-        base = 200
+        hue = 200
         steps = [primary, accent]
         lightness = 70
         chroma = 0.25
@@ -177,7 +177,7 @@ Visualizations show:
 - **Hex colors** - `#007acc`
 - **HSL colors** - `hsl(200, 100%, 50%)`
 - **OKLCH colors** - `oklch(70% 0.2 200deg)`
-- **Font sizes** - `16px`, `24px`
+- **Font sizes** - `16`, `24`
 - **Line heights** - `1.5`, `1.8`
 - **Other values** - As applicable
 

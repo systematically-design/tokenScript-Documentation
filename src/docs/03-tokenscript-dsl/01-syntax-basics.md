@@ -160,16 +160,10 @@ infoColor = #007acc
 ### Spacing Tokens
 
 ```tokenscript
-baseSpacing = 16px
-smallSpacing = 8px
-largeSpacing = 32px
+baseSpacing = 16
+smallSpacing = 8
+largeSpacing = 32
 ```
-
-**Spacing Units:**
-- `px` - Pixels (fixed size)
-- `rem` - Relative to root font size
-- `em` - Relative to parent font size
-- `%` - Percentage
 
 ### Typography Tokens
 
@@ -183,9 +177,9 @@ fontWeightNormal = "400"
 fontWeightBold = "700"
 
 // Font Sizes
-fontSizeSmall = 12px
-fontSizeBase = 16px
-fontSizeLarge = 24px
+fontSizeSmall = 12
+fontSizeBase = 16
+fontSizeLarge = 24
 
 // Line Heights
 lineHeightNormal = 1.5
@@ -196,15 +190,15 @@ lineHeightRelaxed = 1.8
 
 ```tokenscript
 // Border Radius
-borderRadiusSmall = 4px
-borderRadiusMedium = 8px
+borderRadiusSmall = 4
+borderRadiusMedium = 8
 
 // Opacity
 opacityDisabled = 0.5
 opacityHover = 0.8
 
 // Shadows
-shadowSmall = "0 1px 2px rgba(0,0,0,0.1)"
+shadowSmall = "0 1 2 rgba(0,0,0,0.1)"
 
 // Z-Index
 zIndexDropdown = 1000
@@ -306,8 +300,8 @@ primaryColor = #007acc
 secondaryColor = #00a86b
 
 // Spacing
-baseSpacing = 16px
-largeSpacing = 32px
+baseSpacing = 16
+largeSpacing = 32
 ```
 
 **Use Comments:**

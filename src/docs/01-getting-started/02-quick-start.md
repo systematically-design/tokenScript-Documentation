@@ -72,7 +72,7 @@ Let's start with the simplest possible tokens - direct values. In the editor, ty
 ```tokenscript
 // Simple value tokens
 primaryColor = #007acc
-baseSpacing = 16px
+baseSpacing = 16
 fontSize = 16
 ```
 
@@ -80,7 +80,7 @@ As you type, Systematically automatically compiles your TokenScript DSL code. Af
 
 1. **In the preview panel**: New rows appear showing:
    - `primaryColor` with value `#007acc` (type: color)
-   - `baseSpacing` with value `16px` (type: spacing)
+   - `baseSpacing` with value `16` (type: spacing)
    - `fontSize` with value `16` (type: number)
 
 2. **In the editor**: The syntax is highlighted in different colors
@@ -92,14 +92,14 @@ That's it! You've created three tokens by writing TokenScript DSL code.
 Instead of repeating values, you can reference other tokens. Try this:
 
 ```tokenscript
-baseSpacing = 16px
+baseSpacing = 16
 
 // Reference the base spacing
 cardPadding = $baseSpacing
 buttonPadding = $baseSpacing * 2
 ```
 
-Now `cardPadding` is 16px and `buttonPadding` is 32px, automatically calculated from `baseSpacing`. If you change `baseSpacing`, both `cardPadding` and `buttonPadding` will automatically update!
+Now `cardPadding` is 16 and `buttonPadding` is 32, automatically calculated from `baseSpacing`. If you change `baseSpacing`, both `cardPadding` and `buttonPadding` will automatically update!
 
 ## Creating Scales
 
@@ -173,8 +173,8 @@ colors
 ```
 
 This creates:
-- A linear spacing scale from 8px to 24px
-- A modular typography scale from 16px to 31.25px
+- A linear spacing scale from 8 to 24
+- A modular typography scale from 16 to 31.25
 - Color tokens for primary, secondary, and neutral colors
 
 ## Understanding Your First Page
@@ -200,7 +200,7 @@ You can add comments to document your tokens:
 primaryColor = #007acc
 
 // Base spacing unit
-baseSpacing = 16px
+baseSpacing = 16
 ```
 
 Comments start with `//` and help you remember what each token is for.
@@ -215,8 +215,8 @@ primaryColor = #007acc
 secondaryColor = #00a86b
 
 // Spacing
-baseSpacing = 16px
-largeSpacing = 32px
+baseSpacing = 16
+largeSpacing = 32
 ```
 
 ## What's Next

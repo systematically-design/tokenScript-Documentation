@@ -89,31 +89,18 @@ spacing
 
 **DSL Input:**
 ```tokenscript
-baseSpacing = 16px
-smallSpacing = 8px
-largeSpacing = 32px
+baseSpacing = 16
+smallSpacing = 8
+largeSpacing = 32
 ```
 
 **JSON Output:**
 ```json
 {
-  "baseSpacing": "16px",
-  "smallSpacing": "8px",
-  "largeSpacing": "32px"
+  "baseSpacing": 16,
+  "smallSpacing": 8,
+  "largeSpacing": 32
 }
-```
-
-**Spacing Units:**
-- `px` - Pixels (fixed size)
-- `rem` - Relative to root font size
-- `em` - Relative to parent font size
-- `%` - Percentage
-
-**Example:**
-```tokenscript
-baseSpacing = 16px        // Fixed
-relativeSpacing = 1rem     // Relative to root
-parentSpacing = 1em        // Relative to parent
 ```
 
 ### Spacing Scales
@@ -197,15 +184,15 @@ spacing
 
 ```tokenscript
 // Base spacing unit
-baseSpacing = 16px
+baseSpacing = 16
 
 // Common spacing values
-xsSpacing = 4px
-smSpacing = 8px
-mdSpacing = 16px
-lgSpacing = 24px
-xlSpacing = 32px
-xxlSpacing = 48px
+xsSpacing = 4
+smSpacing = 8
+mdSpacing = 16
+lgSpacing = 24
+xlSpacing = 32
+xxlSpacing = 48
 ```
 
 ## Best Practices
@@ -225,9 +212,9 @@ spacing
 ### Match Your Base Unit
 
 Use a base that makes sense for your system:
-- **8px base**: Common for spacing (divisible by 8)
-- **4px base**: Tighter spacing system
-- **16px base**: Larger spacing system
+- **8 base**: Common for spacing (divisible by 8)
+- **4 base**: Tighter spacing system
+- **16 base**: Larger spacing system
 
 ### Reference Base Values
 
@@ -264,8 +251,8 @@ steps = ["a", "b", "c", "d", "e"]
 Add comments explaining your spacing system:
 
 ```tokenscript
-// Spacing scale - 8px base with 4px increments
-// Provides consistent spacing from 8px to 32px
+// Spacing scale - 8 base with 4 increments
+// Provides consistent spacing from 8 to 32
 spacing
   /numberScale : linear
     base = 8

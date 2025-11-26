@@ -102,7 +102,7 @@ spacing
 ```tokenscript
 // Foundation tokens
 primaryColor = #007acc
-baseSpacing = 16px
+baseSpacing = 16
 
 // Component tokens
 button

@@ -10,7 +10,7 @@ Design tokens are named values that represent design decisions. Instead of hardc
 ```tokenscript
 // Define once
 primaryColor = #007acc
-baseSpacing = 16px
+baseSpacing = 16
 
 // Use everywhere
 buttonBackground = $primaryColor
@@ -58,9 +58,9 @@ Automatically generate sequences of values:
 ### References
 Create relationships between tokens:
 ```tokenscript
-baseSpacing = 8px
-cardPadding = $baseSpacing * 2  // 16px
-buttonPadding = $baseSpacing * 1.5  // 12px
+baseSpacing = 8
+cardPadding = $baseSpacing * 2  // 16
+buttonPadding = $baseSpacing * 1.5  // 12
 ```
 
 ### Visualizations
@@ -108,8 +108,8 @@ colors
 ```
 
 This creates:
-- A spacing system from 8px to 24px
-- A typography scale from 16px to 31.25px
+- A spacing system from 8 to 24
+- A typography scale from 16 to 31.25
 - A color palette with primary, secondary, and neutral colors
 
 ---

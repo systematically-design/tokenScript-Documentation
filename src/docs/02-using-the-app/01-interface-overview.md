@@ -107,8 +107,8 @@ Visualizations help you:
 
 The editor uses sensible defaults:
 - **Font**: Geist Mono (monospace)
-- **Font size**: 14px
-- **Line height**: 24px
+- **Font size**: 14
+- **Line height**: 24
 - **Word wrap**: Enabled
 - **Line numbers**: Shown
 

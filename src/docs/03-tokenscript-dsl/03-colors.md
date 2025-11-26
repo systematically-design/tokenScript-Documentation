@@ -80,7 +80,7 @@ Create harmonious color relationships:
 ```tokenscript
 palette
   /colorHarmony : balanced
-    base = 0
+    hue = 0
     steps = 6
     lightness = 70
     chroma = 0.3
@@ -251,7 +251,7 @@ Color harmonies generate colors with specific relationships on the color wheel.
 ```tokenscript
 groupName
   /colorHarmony : harmonyType
-    base = hueValue
+    hue = hueValue
     steps = number or array
     lightness = number
     chroma = number
@@ -263,7 +263,7 @@ groupName
 ```tokenscript
 warmPalette
   /colorHarmony : analogous
-    base = 30  // Starting hue (orange)
+    hue = 30  // Starting hue (orange)
     steps = 5
     lightness = 70
     chroma = 0.25
@@ -273,7 +273,7 @@ warmPalette
 ```tokenscript
 contrastPalette
   /colorHarmony : complementary
-    base = 200  // Starting hue (blue)
+    hue = 200  // Starting hue (blue)
     steps = 2
     lightness = 70
     chroma = 0.25
@@ -283,7 +283,7 @@ contrastPalette
 ```tokenscript
 vibrantPalette
   /colorHarmony : balanced
-    base = 0  // Starting hue (red)
+    hue = 0  // Starting hue (red)
     steps = 6
     lightness = 70
     chroma = 0.3

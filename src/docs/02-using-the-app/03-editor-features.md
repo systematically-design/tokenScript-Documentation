@@ -177,8 +177,8 @@ The editor is configured with sensible defaults, but understanding the settings 
 ### Font
 
 - **Font Family**: Geist Mono (monospace font for code)
-- **Font Size**: 14px (adjustable with browser zoom)
-- **Line Height**: 24px (comfortable reading)
+- **Font Size**: 14 (adjustable with browser zoom)
+- **Line Height**: 24 (comfortable reading)
 
 ### Layout
 
@@ -278,7 +278,7 @@ primaryColor = #007acc
 // ============================================
 // Spacing
 // ============================================
-baseSpacing = 16px
+baseSpacing = 16
 ```
 
 ### Use Folding

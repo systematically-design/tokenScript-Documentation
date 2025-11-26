@@ -215,7 +215,7 @@ colors
 Explain why, not what:
 
 ```tokenscript
-// Base unit - chosen for 8px grid system compatibility
+// Base unit - chosen for 8 grid system compatibility
 baseUnit = 8
 
 // Typography ratio - Major Third (1.25) for balanced hierarchy
@@ -230,7 +230,7 @@ typography
 
 ```tokenscript
 // Spacing system
-// Uses 8px base unit for consistency with common design tools
+// Uses 8 base unit for consistency with common design tools
 // Linear scale ensures even spacing distribution
 spacing
   /numberScale : linear

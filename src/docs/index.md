@@ -15,29 +15,29 @@ Systematically is an app powered by TokenScript DSL where you write DSL code to 
 
 ### Using Systematically
 Learn the interface and features:
-- Interface Overview
-- Pages & Workspace
-- Editor Features
-- Visualizations
-- Cloud Sync
+- **[Interface Overview](02-using-the-app/01-interface-overview)** - Understanding the UI
+- **[Pages & Workspace](02-using-the-app/02-pages-and-workspace)** - Organizing your tokens
+- **[Editor Features](02-using-the-app/03-editor-features)** - Autocomplete, syntax highlighting, shortcuts
+- **[Visualizations](02-using-the-app/04-visualizations)** - Interactive token visualizations
+- **[Cloud Sync](02-using-the-app/05-cloud-sync)** - Saving and syncing your work
 
 ### TokenScript DSL
 Complete guide to TokenScript DSL—the language you write in Systematically:
-- Syntax Basics
-- Scales
-- Colors
-- Typography
-- Spacing
-- Composite Tokens
-- References
-- Expressions
+- **[Syntax Basics](03-tokenscript-dsl/01-syntax-basics)** - Basic syntax and value types
+- **[Scales](03-tokenscript-dsl/02-scales)** - Linear and modular scales
+- **[Colors](03-tokenscript-dsl/03-colors)** - Color formats, scales, and harmonies
+- **[Typography](03-tokenscript-dsl/04-typography)** - Typography tokens and scales
+- **[Spacing](03-tokenscript-dsl/05-spacing)** - Spacing tokens and systems
+- **[Composite Tokens](03-tokenscript-dsl/06-composite-tokens)** - Grouped properties and advanced structures
+- **[References](03-tokenscript-dsl/07-references)** - Referencing tokens and creating relationships
+- **[Expressions](03-tokenscript-dsl/08-expressions)** - Mathematical expressions and calculations
 
 ### Best Practices
-Guidelines for maintainable token systems
+- **[Best Practices](06-best-practices/01-best-practices)** - Guidelines for maintainable token systems
 
 ### Help
-- Troubleshooting
-- FAQ
+- **[Troubleshooting](07-help/01-troubleshooting)** - Common issues and solutions
+- **[FAQ](07-help/02-faq)** - Frequently asked questions
 
 ---
 
