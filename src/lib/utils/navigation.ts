@@ -1,7 +1,6 @@
 import type { NavigationItem } from '$lib/types';
 
 export function generateNavigation(): NavigationItem[] {
-	// Navigation based on our docs structure
 	return [
 		{
 			title: 'Welcome',
@@ -9,129 +8,74 @@ export function generateNavigation(): NavigationItem[] {
 			order: 1
 		},
 		{
-			title: 'Getting Started',
-			path: '01-getting-started',
-			order: 2,
-			children: [
-				{
-					title: 'Introduction',
-					path: '01-getting-started/01-introduction',
-					order: 1
-				},
-				{
-					title: 'Quick Start',
-					path: '01-getting-started/02-quick-start',
-					order: 2
-				}
-			]
+			title: 'Tokens & Values',
+			path: '2.1-tokens-and-values',
+			order: 2
 		},
 		{
-			title: 'Using Systematically',
-			path: '02-using-the-app',
-			order: 3,
-			children: [
-				{
-					title: 'Interface Overview',
-					path: '02-using-the-app/01-interface-overview',
-					order: 1
-				},
-				{
-					title: 'Pages & Workspace',
-					path: '02-using-the-app/02-pages-and-workspace',
-					order: 2
-				},
-				{
-					title: 'Editor Features',
-					path: '02-using-the-app/03-editor-features',
-					order: 3
-				},
-				{
-					title: 'Visualizations',
-					path: '02-using-the-app/04-visualizations',
-					order: 4
-				},
-				{
-					title: 'Cloud Sync',
-					path: '02-using-the-app/05-cloud-sync',
-					order: 5
-				}
-			]
+			title: 'References',
+			path: '2.2-references',
+			order: 3
 		},
 		{
-			title: 'TokenScript DSL',
-			path: '03-tokenscript-dsl',
-			order: 4,
-			children: [
-				{
-					title: 'Syntax Basics',
-					path: '03-tokenscript-dsl/01-syntax-basics',
-					order: 1
-				},
-				{
-					title: 'Scales',
-					path: '03-tokenscript-dsl/02-scales',
-					order: 2
-				},
-				{
-					title: 'Colors',
-					path: '03-tokenscript-dsl/03-colors',
-					order: 3
-				},
-				{
-					title: 'Typography',
-					path: '03-tokenscript-dsl/04-typography',
-					order: 4
-				},
-				{
-					title: 'Spacing',
-					path: '03-tokenscript-dsl/05-spacing',
-					order: 5
-				},
-				{
-					title: 'Composite Tokens',
-					path: '03-tokenscript-dsl/06-composite-tokens',
-					order: 6
-				},
-				{
-					title: 'References',
-					path: '03-tokenscript-dsl/07-references',
-					order: 7
-				},
-				{
-					title: 'Expressions',
-					path: '03-tokenscript-dsl/08-expressions',
-					order: 8
-				}
-			]
+			title: 'Expressions',
+			path: '2.3-expressions',
+			order: 4
 		},
 		{
-			title: 'Best Practices',
-			path: '06-best-practices',
-			order: 6,
-			children: [
-				{
-					title: 'Best Practices',
-					path: '06-best-practices/01-best-practices',
-					order: 1
-				}
-			]
+			title: 'Composite Tokens',
+			path: '2.4-composite-tokens',
+			order: 5
 		},
 		{
-			title: 'Help',
-			path: '07-help',
-			order: 7,
-			children: [
-				{
-					title: 'Troubleshooting',
-					path: '07-help/01-troubleshooting',
-					order: 1
-				},
-				{
-					title: 'FAQ',
-					path: '07-help/02-faq',
-					order: 2
-				}
-			]
+			title: 'Number Scales',
+			path: '3.1-number-scales',
+			order: 6
+		},
+		{
+			title: 'Color Generators',
+			path: '3.2-color-generators',
+			order: 7
+		},
+		{
+			title: 'Pipelines',
+			path: '4.1-pipelines',
+			order: 8
+		},
+		{
+			title: 'Iteration',
+			path: '5.1-iteration',
+			order: 9
+		},
+		{
+			title: 'Conditionals',
+			path: '5.2-conditionals',
+			order: 10
+		},
+		{
+			title: 'Typography Systems',
+			path: '6.1-typography-systems',
+			order: 11
+		},
+		{
+			title: 'Spacing Systems',
+			path: '6.2-spacing-systems',
+			order: 12
+		},
+		{
+			title: 'DSL Patterns',
+			path: '7.1-dsl-patterns',
+			order: 13
+		},
+		{
+			title: 'Troubleshooting',
+			path: '7.2-troubleshooting',
+			order: 14
+		},
+		{
+			title: 'FAQ',
+			path: '7.3-faq',
+			order: 15
 		}
 	];
 }

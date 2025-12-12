@@ -1,8 +1,9 @@
 <script lang="ts">
 	import Layout from '$lib/components/Layout.svelte';
 	import { onMount } from 'svelte';
-	import { generateNavigation } from '$lib/utils/navigation.js';
+	import { generateNavigation } from '$lib/utils/navigation';
 	import type { NavigationItem } from '$lib/types';
+	import { page } from '$app/stores';
 	import '../css/app.css';
 	
 	let { children } = $props();
@@ -18,6 +19,8 @@
 	});
 </script>
 
-<Layout {navigation}>
-	{@render children?.()}
-</Layout>
+{#key $page.url.pathname}
+	<Layout {navigation}>
+		{@render children?.()}
+	</Layout>
+{/key}

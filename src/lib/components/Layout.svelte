@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import Sidebar from './Sidebar.svelte';
 	import TableOfContents from './TableOfContents.svelte';
-	import { extractTableOfContents } from '$lib/utils/toc.js';
+	import { extractTableOfContents } from '$lib/utils/toc';
 	import { base } from '$app/paths';
 	import type { NavigationItem, TOCHeading } from '$lib/types';
 

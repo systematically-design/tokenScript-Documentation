@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { smoothScrollToElement } from '$lib/utils/toc.js';
+	import { smoothScrollToElement } from '$lib/utils/toc';
 	import type { TOCHeading } from '$lib/types';
 	
 	export let headings: TOCHeading[] = [];
